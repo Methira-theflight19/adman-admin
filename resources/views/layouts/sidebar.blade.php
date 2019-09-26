@@ -52,9 +52,12 @@
                     </a>
                     <ul class="nav-second-level" aria-expanded="false">
                         <li>
-                            <a href="{{ route('admin.banners.index') }}">List</a>
+                            <a href="{{ url('/admin/list/banners') }}">All</a>
                         </li>
                         <li>
+                            <a href="{{ route('admin.banners.index') }}">List</a>
+                        </li>
+                        <!-- <li>
                             <a href="{{ url('/admin/banners/2/edit') }}">About Us</a>
                         </li>
                         <li>
@@ -68,7 +71,7 @@
                         </li>
                         <li>
                             <a href="{{ url('admin/banners/6/edit') }}">Archive</a>
-                        </li>
+                        </li> -->
                     </ul>
                 </li>
 

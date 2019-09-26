@@ -49,6 +49,7 @@ class BannersController extends Controller
     {
         return new ViewResponse('backend.banners.index');
     }
+
     /**
      * Show the form for creating a new resource.
      *
@@ -103,7 +104,7 @@ class BannersController extends Controller
         if($banner->banner_list == 1){
             return new RedirectResponse(route('admin.banners.index'), ['flash_success' => trans('alerts.backend.banners.updated')]);
         }else{
-            return Redirect::back()->with('flash_success','update success!');
+            return new RedirectResponse(route('admin.banners.list'), ['flash_success' => trans('alerts.backend.banners.updated')]);
         }
         
     }

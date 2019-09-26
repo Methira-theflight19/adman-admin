@@ -31,23 +31,12 @@
 </div><!--form control-->
 
 <div class="checkbox checkbox-info ml-2 mb-2">
-    @if(!empty($banners))
-        @if($banners->id > 6 )
+
             <input id='banner_list' type='hidden' value='0' name='banner_list'>        
-            <input checked id="checkbox4" type="checkbox" name="banner_list" value="1">
+            <input id="checkbox4" type="checkbox" name="banner_list" value="1">
             <label for="checkbox4">
                 Banner list
             </label>
-        @elseif($banners->id < 6)
-            <input id='banner_list' type='hidden' value='0' name='banner_list'>    
-        @endif
-    @else 
-            <input id='banner_list' type='hidden' value='0' name='banner_list'>        
-            <input checked id="checkbox4" type="checkbox" name="banner_list" value="1">
-            <label for="checkbox4">
-                Banner list
-            </label>
-    @endif
 </div> 
 <div class="form-group">
     <label for="content" class="control-label required">Link</label> 

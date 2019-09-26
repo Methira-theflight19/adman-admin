@@ -7,6 +7,7 @@ use App\Http\Controllers\Controller;
 use Yajra\DataTables\Facades\DataTables;
 use App\Repositories\Backend\Banner\BannerRepository;
 use App\Http\Requests\Backend\Banner\ManageBannerRequest;
+use App\Http\Responses\ViewResponse;
 
 /**
  * Class BannersTableController.
@@ -18,6 +19,11 @@ class BannersTableController extends Controller
      * @var BannerRepository
      */
     protected $banner;
+
+    public function listView(ManageBannerRequest $request)
+    {
+        return new ViewResponse('backend.banners.list');
+    }
 
     /**
      * contructor to initialize repository object
@@ -36,6 +42,7 @@ class BannersTableController extends Controller
      */
     public function __invoke(ManageBannerRequest $request)
     {   
+
         //banner index table
         return Datatables::of($this->banner->getForDataTable()->where('banner_list', '=', "1"))
             ->escapeColumns(['id'])
@@ -51,9 +58,22 @@ class BannersTableController extends Controller
             })
             ->make(true);
     }
-    public function api(ManageBannerRequest $request)
+    public function list(ManageBannerRequest $request)
     {   
+        
         //banner index table
-        return Datatables::of($this->banner->getAll());
+        return Datatables::of($this->banner->getForDataTable()->where('banner_list', '=', "0"))
+            ->escapeColumns(['id'])
+            ->addColumn('banner_picture', function ($banner) {
+                $url= asset('storage/img/banner/'.$banner->banner_picture);
+                 return '<img src="'.$url.'" border="0" width="100%" class="img-rounded" align="center" />';
+            })
+            ->addColumn('created_at', function ($banner) {
+                return Carbon::parse($banner->created_at)->toDateString();
+            })
+            ->addColumn('actions', function ($banner) {
+                return $banner->action_buttons;
+            })
+            ->make(true);
     }
 }
