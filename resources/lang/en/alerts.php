@@ -74,5 +74,10 @@ return [
 	"deleted" => "The Banner was successfully deleted.",
 	"updated" => "The Banner was successfully updated.",
 	],
+	"sponsors" => [
+	"created" => "The Sponsor was successfully created.",
+	"deleted" => "The Sponsor was successfully deleted.",
+	"updated" => "The Sponsor was successfully updated.",
+	],
 	],
 ];

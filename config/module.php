@@ -32,4 +32,7 @@ return [
 	"banners" => [
 	"table" => "banners",
 	],
+	"sponsors" => [
+	"table" => "sponsors",
+	],
 ];

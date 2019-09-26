@@ -136,6 +136,13 @@ return [
 	"management" => "Banner Management",
 	"main" => "Banners",
 	],
+	"sponsors" => [
+	"all" => "All Sponsors",
+	"create" => "Create Sponsor",
+	"edit" => "Edit Sponsor",
+	"management" => "Sponsor Management",
+	"main" => "Sponsors",
+	],
 	],
 	"language-picker" => [
 	"language" => "Language",

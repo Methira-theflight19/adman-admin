@@ -276,6 +276,16 @@ return [
 	"createdat" => "Created At",
 	],
 	],
+	"sponsors" => [
+	"create" => "Create Sponsor",
+	"edit" => "Edit Sponsor",
+	"management" => "Sponsor Management",
+	"title" => "Sponsors",
+	"table" => [
+	"id" => "Id",
+	"createdat" => "Created At",
+	],
+	],
 	],
 	"frontend" => [
 	"auth" => [
