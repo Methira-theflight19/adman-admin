@@ -51,4 +51,9 @@ class BannersTableController extends Controller
             })
             ->make(true);
     }
+    public function api(ManageBannerRequest $request)
+    {   
+        //banner index table
+        return Datatables::of($this->banner->getAll());
+    }
 }
