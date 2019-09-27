@@ -9,6 +9,8 @@ use App\Exceptions\GeneralException;
 use App\Repositories\BaseRepository;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Storage;
+use App\Models\MenuCategory\Menucategory;
+use App\Models\MenuMapBanner\MenuMapBanner;
 
 /**
  * Class BannerRepository.
@@ -70,12 +72,16 @@ class BannerRepository extends BaseRepository
      */
     public function create(array $input)
     {
-
+        $menucat = $input['menu_category'];
+      
         $input = $this->uploadImage($input);
         if(!empty($input['banner_picture_sm'])){
             $input = $this->uploadImage2($input);
         }
-        if (Banner::create($input)) {
+        if ($banner = Banner::create($input)) {
+
+            $banner->menu()->sync($menucat);
+
             return true;
         }
         throw new GeneralException(trans('exceptions.backend.banners.create_error'));
@@ -99,7 +105,10 @@ class BannerRepository extends BaseRepository
             $this->deleteOldFile2($banner);
             $input = $this->uploadImage2($input);
         }
-    	if ($banner->update($input))
+        $menucat = $input['menu_category'];
+    	if ($banner->update($input)){
+            $banner->menu()->sync($menucat);
+        }
             return true;
 
         throw new GeneralException(trans('exceptions.backend.banners.update_error'));
@@ -115,6 +124,7 @@ class BannerRepository extends BaseRepository
     public function delete(Banner $banner)
     {
         if ($banner->delete()) {
+            MenuMapBanner::where('banner_id', $banner->id)->delete();
             return true;
         }
 

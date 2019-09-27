@@ -44,7 +44,7 @@ class BannersTableController extends Controller
     {   
 
         //banner index table
-        return Datatables::of($this->banner->getForDataTable()->where('banner_list', '=', "1"))
+        return Datatables::of($this->banner->getForDataTable())
             ->escapeColumns(['id'])
             ->addColumn('banner_picture', function ($banner) {
                 $url= asset('storage/img/banner/'.$banner->banner_picture);

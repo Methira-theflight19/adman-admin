@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Models\Banner\Traits;
+use App\Models\MenuCategory\Menucategory;
 
 /**
  * Class BannerRelationship
@@ -19,4 +20,9 @@ trait BannerRelationship
         $this->belongsTo(User::class);
     }
      */
+
+    public function menu()
+    {
+        return $this->belongsToMany(Menucategory::class, 'menu_map_banner', 'banner_id','menu_id');
+    }
 }

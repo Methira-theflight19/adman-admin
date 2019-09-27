@@ -16,6 +16,7 @@ use App\Http\Requests\Backend\Banner\StoreBannerRequest;
 use App\Http\Requests\Backend\Banner\EditBannerRequest;
 use App\Http\Requests\Backend\Banner\UpdateBannerRequest;
 use App\Http\Requests\Backend\Banner\DeleteBannerRequest;
+use App\Models\MenuCategory\Menucategory;
 
 use Redirect;
 
@@ -58,7 +59,9 @@ class BannersController extends Controller
      */
     public function create(CreateBannerRequest $request)
     {
-        return new CreateResponse('backend.banners.create');
+        $menuCategories = Menucategory::all();
+        return new CreateResponse($menuCategories);
+        // return new CreateResponse('backend.banners.create');
     }
     /**
      * Store a newly created resource in storage.
@@ -84,7 +87,8 @@ class BannersController extends Controller
      */
     public function edit(Banner $banner, EditBannerRequest $request)
     {
-        return new EditResponse($banner);
+        $menuCategories = Menucategory::all();
+        return new EditResponse($banner,$menuCategories);
     }
     /**
      * Update the specified resource in storage.

@@ -22,6 +22,7 @@
                     <thead>
                         <tr>
                             <th>{{ trans('labels.backend.banners.table.id') }}</th>
+                            <!-- <th>Menu Category</th> -->
                             <th>Name</th>
                             <th>Image</th>
                             <th>Action</th>
@@ -63,6 +64,7 @@
                 },
                 columns: [
                     {data: 'id', name: '{{config('module.banners.table')}}.id'},
+                    // {data: 'banner', name: '{{config('module.banners.table')}}.banner_name'},
                     {data: 'banner_name', name: '{{config('module.banners.table')}}.banner_name'},
                     {data: 'banner_picture', name: '{{config('module.banners.table')}}.banner_picture'},
                     {data: 'actions', name: 'actions', searchable: false, sortable: false}

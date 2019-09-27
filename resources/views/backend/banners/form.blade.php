@@ -7,8 +7,32 @@
     @else   
     <input class="form-control" placeholder="Banner name" name="banner_name" type="text" id="banner_name" >
     @endif
-
 </div><!--form control-->
+
+
+
+<div class="form-group">
+    <label for="content" class="control-label required">Menu Category</label> 
+    <select class="form-control custom-select" name="menu_category" id="menu_category" data-toggle="select2" require>
+  
+    @if(!empty($selectedmenu))
+        @foreach($menuCategories as $menu)
+            @if($menu['id'] == $selectedmenu[0])
+                <option selected value="{{$menu->id}}">{{$menu->menu_name}}</option>
+            @else
+                <option value="{{$menu->id}}">{{$menu->menu_name}}</option>
+            @endif
+        @endforeach
+    @else
+                <option selected disabled>choose menu</option>
+            @foreach($menuCategories as $menu)
+                <option value="{{$menu->id}}">{{$menu->menu_name}}</option>
+            @endforeach
+    @endif
+    
+    </select>
+
+</div>
 
 <div class="form-group pd-3">
         <label for="content" class="control-label required">Banner picture</label> 
