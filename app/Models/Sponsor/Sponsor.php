@@ -31,7 +31,14 @@ class Sponsor extends Model
      * @var array
      */
     protected $fillable = [
-
+        'sponsor_name',
+        'sponsor_picture',
+        'seo_title',
+        'seo_alt',
+        'seo_description',
+        'link',
+        'created_by',	
+        'updated_by',	
     ];
 
     /**

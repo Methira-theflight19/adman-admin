@@ -1,4 +1,7 @@
-@extends ('backend.layouts.app')
+@extends ('layouts.master')
+@section('css')
+<link href="{{ URL::asset('assets/libs/dropify/dropify.min.css')}}" rel="stylesheet" type="text/css" />
+@endsection
 
 @section ('title', trans('labels.backend.sponsors.management') . ' | ' . trans('labels.backend.sponsors.create'))
 
@@ -10,11 +13,11 @@
 @endsection
 
 @section('content')
-    {{ Form::open(['route' => 'admin.sponsors.store', 'class' => 'form-horizontal', 'role' => 'form', 'method' => 'post', 'id' => 'create-sponsor']) }}
+    {{ Form::open(['route' => 'admin.sponsors.store', 'class' => 'form-horizontal', 'role' => 'form', 'method' => 'post', 'id' => 'create-sponsor', 'files' => true]) }}
 
-        <div class="box box-info">
+        <div class="card box box-info">
             <div class="box-header with-border">
-                <h3 class="box-title">{{ trans('labels.backend.sponsors.create') }}</h3>
+                <h3 class="box-title ml-3">{{ trans('labels.backend.sponsors.create') }}</h3>
 
                 <div class="box-tools pull-right">
                     @include('backend.sponsors.partials.sponsors-header-buttons')
@@ -34,4 +37,10 @@
             </div><!--box-body-->
         </div><!--box box-success-->
     {{ Form::close() }}
+@endsection
+
+@section('script')
+        <script src="{{ URL::asset('assets/libs/dropify/dropify.min.js')}}"></script>
+        <script src="{{ URL::asset('assets/js/pages/form-pickers.init.js')}}"></script>
+        <script src="{{ URL::asset('assets/js/pages/form-fileuploads.init.js')}}"></script>
 @endsection

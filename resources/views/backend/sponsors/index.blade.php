@@ -1,4 +1,4 @@
-@extends ('backend.layouts.app')
+@extends ('layouts.master')
 
 @section ('title', trans('labels.backend.sponsors.management'))
 
@@ -7,7 +7,7 @@
 @endsection
 
 @section('content')
-    <div class="box box-info">
+    <div class="card box box-info">
         <div class="box-header with-border">
             <h3 class="box-title">{{ trans('labels.backend.sponsors.management') }}</h3>
 
@@ -18,16 +18,18 @@
 
         <div class="box-body">
             <div class="table-responsive data-table-wrapper">
-                <table id="sponsors-table" class="table table-condensed table-hover table-bordered">
+                <table id="sponsors-table" class="w-100 table table-condensed table-hover table-bordered">
                     <thead>
                         <tr>
                             <th>{{ trans('labels.backend.sponsors.table.id') }}</th>
-                            <th>{{ trans('labels.backend.sponsors.table.createdat') }}</th>
+                            <th>Sponsor Name</th>
+                            <th>Sponsor Picture</th>
                             <th>{{ trans('labels.general.actions') }}</th>
                         </tr>
                     </thead>
                     <thead class="transparent-bg">
                         <tr>
+                            <th></th>
                             <th></th>
                             <th></th>
                             <th></th>
@@ -61,7 +63,8 @@
                 },
                 columns: [
                     {data: 'id', name: '{{config('module.sponsors.table')}}.id'},
-                    {data: 'created_at', name: '{{config('module.sponsors.table')}}.created_at'},
+                    {data: 'sponsor_name', name: '{{config('module.sponsors.table')}}.sponsor_name'},
+                    {data: 'sponsor_picture', name: '{{config('module.sponsors.table')}}.sponsor_picture'},
                     {data: 'actions', name: 'actions', searchable: false, sortable: false}
                 ],
                 order: [[0, "asc"]],

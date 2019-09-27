@@ -38,6 +38,10 @@ class SponsorsTableController extends Controller
     {
         return Datatables::of($this->sponsor->getForDataTable())
             ->escapeColumns(['id'])
+            ->addColumn('sponsor_picture', function ($sponsor) {
+                $url= asset('storage/img/sponsor/'.$sponsor->sponsor_picture);
+                 return '<img src="'.$url.'" border="0" width="100%" class="img-rounded" align="center" />';
+            })
             ->addColumn('created_at', function ($sponsor) {
                 return Carbon::parse($sponsor->created_at)->toDateString();
             })

@@ -55,7 +55,7 @@
                             <a href="{{ url('/admin/list/banners') }}">All</a>
                         </li>
                         <li>
-                            <a href="{{ route('admin.banners.index') }}">List</a>
+                            <a href="{{ route('admin.banners.index') }}">Home</a>
                         </li>
                         <!-- <li>
                             <a href="{{ url('/admin/banners/2/edit') }}">About Us</a>
@@ -74,13 +74,21 @@
                         </li> -->
                     </ul>
                 </li>
+           
 
+           
                 <!-- <li>
                     <a href="{{ route('admin.menus.index') }}">
                         <i class="fe-menu "></i>
                         <span> Menus </span>
                     </a>
                 </li> -->
+                <li>
+                    <a href="{{ route('admin.sponsors.index') }}">
+                        <i class="fe-thumbs-up"></i>
+                        <span> Sponsor </span>
+                    </a>
+                </li>
                 <li>
                     <a href="{{ route('admin.pages.index') }}">
                         <i class="fe-file "></i>

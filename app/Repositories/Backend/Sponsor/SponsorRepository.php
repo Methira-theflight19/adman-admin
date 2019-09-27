@@ -8,6 +8,7 @@ use App\Models\Sponsor\Sponsor;
 use App\Exceptions\GeneralException;
 use App\Repositories\BaseRepository;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Storage;
 
 /**
  * Class SponsorRepository.
@@ -25,11 +26,31 @@ class SponsorRepository extends BaseRepository
      * the grid
      * @return mixed
      */
+
+    protected $upload_path;
+
+    /**
+     * Storage Class Object.
+     *
+     * @var \Illuminate\Support\Facades\Storage
+     */
+    protected $storage;
+    public function __construct()
+    {
+        $this->upload_path = 'img'.DIRECTORY_SEPARATOR.'sponsor'.DIRECTORY_SEPARATOR;
+        $this->storage = Storage::disk('public');
+    }
     public function getForDataTable()
     {
         return $this->query()
             ->select([
                 config('module.sponsors.table').'.id',
+                config('module.sponsors.table').'.sponsor_name',
+                config('module.sponsors.table').'.sponsor_picture',
+                config('module.sponsors.table').'.seo_title',
+                config('module.sponsors.table').'.seo_alt',
+                config('module.sponsors.table').'.seo_description',
+                config('module.sponsors.table').'.link',
                 config('module.sponsors.table').'.created_at',
                 config('module.sponsors.table').'.updated_at',
             ]);
@@ -44,6 +65,8 @@ class SponsorRepository extends BaseRepository
      */
     public function create(array $input)
     {
+
+        $input = $this->uploadImage($input);
         if (Sponsor::create($input)) {
             return true;
         }
@@ -60,6 +83,10 @@ class SponsorRepository extends BaseRepository
      */
     public function update(Sponsor $sponsor, array $input)
     {
+        if  (is_array($input) && array_key_exists('sponsor_picture', $input)) {
+            $this->deleteOldFile($banner);
+            $input = $this->uploadImage($input);
+        }
     	if ($sponsor->update($input))
             return true;
 
@@ -80,5 +107,25 @@ class SponsorRepository extends BaseRepository
         }
 
         throw new GeneralException(trans('exceptions.backend.sponsors.delete_error'));
+    }
+    public function uploadImage($input)
+    {
+        $avatar = $input['sponsor_picture'];
+
+        if (isset($input['sponsor_picture']) && !empty($input['sponsor_picture'])) {
+            $fileName = time().$avatar->getClientOriginalName();
+
+            $this->storage->put($this->upload_path.$fileName, file_get_contents($avatar->getRealPath()));
+
+            $input = array_merge($input, ['sponsor_picture' => $fileName]);
+
+            return $input;
+        }
+    }
+    public function deleteOldFile($model)
+    {
+        $fileName = $model->banner_picture;
+
+        return $this->storage->delete($this->upload_path.$fileName);
     }
 }
