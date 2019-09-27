@@ -113,6 +113,13 @@ return [
 	"not_found" => "That Sponsor does not exist.",
 	"update_error" => "There was a problem updating this Sponsor. Please try again.",
 	],
+	"menucategories" => [
+	"already_exists" => "That MenuCategory already exists. Please choose a different name.",
+	"create_error" => "There was a problem creating this MenuCategory. Please try again.",
+	"delete_error" => "There was a problem deleting this MenuCategory. Please try again.",
+	"not_found" => "That MenuCategory does not exist.",
+	"update_error" => "There was a problem updating this MenuCategory. Please try again.",
+	],
 	],
 	"frontend" => [
 	"auth" => [

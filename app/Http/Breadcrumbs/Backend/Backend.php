@@ -19,3 +19,4 @@ require __DIR__.'/LogViewer.php';
 
 require __DIR__.'/Banner.php';
 require __DIR__.'/Sponsor.php';
+require __DIR__.'/Menucategory.php';

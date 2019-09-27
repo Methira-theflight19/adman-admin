@@ -143,6 +143,13 @@ return [
 	"management" => "Sponsor Management",
 	"main" => "Sponsors",
 	],
+	"menucategories" => [
+	"all" => "All MenuCategories",
+	"create" => "Create MenuCategory",
+	"edit" => "Edit MenuCategory",
+	"management" => "MenuCategory Management",
+	"main" => "MenuCategories",
+	],
 	],
 	"language-picker" => [
 	"language" => "Language",

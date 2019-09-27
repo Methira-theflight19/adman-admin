@@ -286,6 +286,16 @@ return [
 	"createdat" => "Created At",
 	],
 	],
+	"menucategories" => [
+	"create" => "Create MenuCategory",
+	"edit" => "Edit MenuCategory",
+	"management" => "MenuCategory Management",
+	"title" => "MenuCategories",
+	"table" => [
+	"id" => "Id",
+	"createdat" => "Created At",
+	],
+	],
 	],
 	"frontend" => [
 	"auth" => [

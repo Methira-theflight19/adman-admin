@@ -52,6 +52,9 @@
                     </a>
                     <ul class="nav-second-level" aria-expanded="false">
                         <li>
+                            <a href="{{ route('admin.menucategories.index') }}">Menu Category</a>
+                        </li>
+                        <li>
                             <a href="{{ url('/admin/list/banners') }}">All</a>
                         </li>
                         <li>

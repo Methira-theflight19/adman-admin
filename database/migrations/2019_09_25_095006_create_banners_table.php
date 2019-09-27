@@ -17,7 +17,7 @@ class CreateBannersTable extends Migration
             $table->bigIncrements('id');
             $table->string('banner_name', 191);
             $table->string('banner_picture', 191);
-            $table->string('banner_picture_sm', 191)->nullable();
+            $table->string('banner_picture', 191);
             $table->boolean('banner_list')->default(0);
             $table->string('seo_title', 191)->nullable();
             $table->string('seo_alt', 191)->nullable();
