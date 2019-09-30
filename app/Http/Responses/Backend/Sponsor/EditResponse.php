@@ -10,13 +10,15 @@ class EditResponse implements Responsable
      * @var App\Models\Sponsor\Sponsor
      */
     protected $sponsors;
+    protected $sponsorCategory;
 
     /**
      * @param App\Models\Sponsor\Sponsor $sponsors
      */
-    public function __construct($sponsors)
+    public function __construct($sponsors,$sponsorCategory)
     {
         $this->sponsors = $sponsors;
+        $this->sponsorCategory = $sponsorCategory;
     }
 
     /**
@@ -28,8 +30,12 @@ class EditResponse implements Responsable
      */
     public function toResponse($request)
     {
+        $selectedsponsorcat = $this->sponsors->category->pluck('id');
         return view('backend.sponsors.edit')->with([
-            'sponsors' => $this->sponsors
+            'sponsors' => $this->sponsors,
+            'sponsorCategory' => $this->sponsorCategory,
+            'selectedsponsorcat' => $selectedsponsorcat,
+
         ]);
     }
 }

@@ -77,7 +77,25 @@
                         </li> -->
                     </ul>
                 </li>
-           
+                <li>
+                    <a href="javascript: void(0);">
+                        <i class="fe-thumbs-up"></i>
+                        <span>Sponsor</span>
+                        <span class="menu-arrow"></span>
+                    </a>
+                    <ul class="nav-second-level" aria-expanded="false">
+                        <li>
+                            <a href="{{ route('admin.sponsorcategories.index') }}">
+                                <span> Sponsor Category</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{ route('admin.sponsors.index') }}">
+                                <span> Sponsor </span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
 
            
                 <!-- <li>
@@ -86,12 +104,7 @@
                         <span> Menus </span>
                     </a>
                 </li> -->
-                <li>
-                    <a href="{{ route('admin.sponsors.index') }}">
-                        <i class="fe-thumbs-up"></i>
-                        <span> Sponsor </span>
-                    </a>
-                </li>
+         
                 <li>
                     <a href="{{ route('admin.pages.index') }}">
                         <i class="fe-file "></i>

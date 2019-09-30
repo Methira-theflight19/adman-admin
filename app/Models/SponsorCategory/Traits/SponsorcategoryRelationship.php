@@ -1,13 +1,11 @@
 <?php
 
-namespace App\Models\Sponsor\Traits;
-use App\Models\SponsorCategory\Sponsorcategory;
-
+namespace App\Models\SponsorCategory\Traits;
 
 /**
- * Class SponsorRelationship
+ * Class SponsorcategoryRelationship
  */
-trait SponsorRelationship
+trait SponsorcategoryRelationship
 {
     /*
     * put you model relationships here
@@ -21,8 +19,5 @@ trait SponsorRelationship
         $this->belongsTo(User::class);
     }
      */
-    public function category()
-    {
-        return $this->belongsToMany(Sponsorcategory::class, 'sponsor_map_category', 'sponsor_id','sponsor_cat_id');
-    }
+
 }

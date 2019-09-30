@@ -16,6 +16,7 @@ use App\Http\Requests\Backend\Sponsor\StoreSponsorRequest;
 use App\Http\Requests\Backend\Sponsor\EditSponsorRequest;
 use App\Http\Requests\Backend\Sponsor\UpdateSponsorRequest;
 use App\Http\Requests\Backend\Sponsor\DeleteSponsorRequest;
+use App\Models\SponsorCategory\Sponsorcategory;
 
 /**
  * SponsorsController
@@ -55,7 +56,8 @@ class SponsorsController extends Controller
      */
     public function create(CreateSponsorRequest $request)
     {
-        return new CreateResponse('backend.sponsors.create');
+        $sponsorCategory = Sponsorcategory::all();
+        return new CreateResponse( $sponsorCategory);
     }
     /**
      * Store a newly created resource in storage.
@@ -81,7 +83,8 @@ class SponsorsController extends Controller
      */
     public function edit(Sponsor $sponsor, EditSponsorRequest $request)
     {
-        return new EditResponse($sponsor);
+        $sponsorCategory = Sponsorcategory::all();
+        return new EditResponse($sponsor, $sponsorCategory);
     }
     /**
      * Update the specified resource in storage.

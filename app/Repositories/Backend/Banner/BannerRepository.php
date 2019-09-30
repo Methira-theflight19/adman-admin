@@ -10,7 +10,6 @@ use App\Repositories\BaseRepository;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Storage;
 use App\Models\MenuCategory\Menucategory;
-use App\Models\MenuMapBanner\MenuMapBanner;
 
 /**
  * Class BannerRepository.
@@ -43,7 +42,7 @@ class BannerRepository extends BaseRepository
         $this->storage = Storage::disk('public');
     }
 
-    public function getForDataTable($banner)
+    public function getForDataTable()
     {
         return $this->query()
             ->select([

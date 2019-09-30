@@ -44,7 +44,7 @@ class BannersTableController extends Controller
     public function __invoke(ManageBannerRequest $request)
     {   
         //banner index table
-        return Datatables::of($this->banner->getForDataTable($this->banner))
+        return Datatables::of($this->banner->getForDataTable())
             ->escapeColumns(['id'])
             ->addColumn('menu', function ($banner) {
                 $selectedmenu = $banner->menu->pluck('id');

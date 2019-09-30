@@ -66,8 +66,10 @@ class SponsorRepository extends BaseRepository
     public function create(array $input)
     {
 
+        $sponsorcat = $input['sponsor_category'];
         $input = $this->uploadImage($input);
-        if (Sponsor::create($input)) {
+        if ($sponser = Sponsor::create($input)) {
+            $sponser->category()->sync($sponsorcat);
             return true;
         }
         throw new GeneralException(trans('exceptions.backend.sponsors.create_error'));
@@ -83,11 +85,15 @@ class SponsorRepository extends BaseRepository
      */
     public function update(Sponsor $sponsor, array $input)
     {
+        $sponsorcat = $input['sponsor_category'];
         if  (is_array($input) && array_key_exists('sponsor_picture', $input)) {
             $this->deleteOldFile($banner);
             $input = $this->uploadImage($input);
         }
-    	if ($sponsor->update($input))
+        if ($sponsor->update($input)){
+            $sponsor->category()->sync($sponsorcat);
+        }
+        
             return true;
 
         throw new GeneralException(trans('exceptions.backend.sponsors.update_error'));

@@ -1,6 +1,8 @@
 @extends ('layouts.master')
+
 @section('css')
 <link href="{{ URL::asset('assets/libs/dropify/dropify.min.css')}}" rel="stylesheet" type="text/css" />
+<link href="{{ URL::asset('assets/libs/select2/select2.min.css')}}" rel="stylesheet" type="text/css" />
 @endsection
 
 @section ('title', trans('labels.backend.sponsors.management') . ' | ' . trans('labels.backend.sponsors.create'))
@@ -43,4 +45,6 @@
         <script src="{{ URL::asset('assets/libs/dropify/dropify.min.js')}}"></script>
         <script src="{{ URL::asset('assets/js/pages/form-pickers.init.js')}}"></script>
         <script src="{{ URL::asset('assets/js/pages/form-fileuploads.init.js')}}"></script>
+        <script src="{{ URL::asset('assets/libs/select2/select2.min.js')}}"></script>
+        <script src="{{ URL::asset('assets/js/pages/form-advanced.init.js')}}"></script>
 @endsection

@@ -38,4 +38,7 @@ return [
 	"menucategories" => [
 	"table" => "menu_categories",
 	],
+	"sponsorcategories" => [
+	"table" => "sponsor_categories",
+	],
 ];

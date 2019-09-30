@@ -1,42 +1,39 @@
 @extends ('layouts.master')
 
-@section ('title', trans('labels.backend.sponsors.management'))
+@section ('title', trans('labels.backend.sponsorcategories.management'))
 
 @section('page-header')
-    <h1>{{ trans('labels.backend.sponsors.management') }}</h1>
+    <h1>{{ trans('labels.backend.sponsorcategories.management') }}</h1>
 @endsection
 
 @section('content')
     <div class="card box box-info">
         <div class="box-header with-border">
-            <h3 class="box-title">{{ trans('labels.backend.sponsors.management') }}</h3>
+            <h3 class="box-title">{{ trans('labels.backend.sponsorcategories.management') }}</h3>
 
             <div class="box-tools pull-right">
-                @include('backend.sponsors.partials.sponsors-header-buttons')
+                @include('backend.sponsorcategories.partials.sponsorcategories-header-buttons')
             </div>
         </div><!--box-header with-border-->
 
         <div class="box-body">
             <div class="table-responsive data-table-wrapper">
-                <table id="sponsors-table" class="w-100 table table-condensed table-hover table-bordered">
+                <table id="sponsorcategories-table" class="w-100 table table-condensed table-hover table-bordered">
                     <thead>
                         <tr>
-                            <th>{{ trans('labels.backend.sponsors.table.id') }}</th>
-                            <th>Sponsor Category</th>
-                            <th>Sponsor Name</th>
-                            <th>Sponsor Picture</th>
+                            <th>{{ trans('labels.backend.sponsorcategories.table.id') }}</th>
+                            <th>Category</th>
+                            <th>{{ trans('labels.backend.sponsorcategories.table.createdat') }}</th>
                             <th>{{ trans('labels.general.actions') }}</th>
                         </tr>
                     </thead>
-                    <!-- <thead class="transparent-bg">
+                    <thead class="transparent-bg">
                         <tr>
                             <th></th>
-                            <th>{!! Form::text('sponsor_cat', null, ["class" => "search-input-text form-control", "data-column" => 0, "placeholder" => trans('labels.backend.blogs.table.title')]) !!}
-                                <a class="reset-data" href="javascript:void(0)"><i class="fa fa-times"></i></a></th>
                             <th></th>
                             <th></th>
                         </tr>
-                    </thead> -->
+                    </thead>
                 </table>
             </div><!--table-responsive-->
         </div><!-- /.box-body -->
@@ -56,18 +53,17 @@
                 }
             });
             
-            var dataTable = $('#sponsors-table').dataTable({
+            var dataTable = $('#sponsorcategories-table').dataTable({
                 processing: true,
                 serverSide: true,
                 ajax: {
-                    url: '{{ route("admin.sponsors.get") }}',
+                    url: '{{ route("admin.sponsorcategories.get") }}',
                     type: 'post'
                 },
                 columns: [
-                    {data: 'id', name: '{{config('module.sponsors.table')}}.id'},
-                    {data: 'sponsor_cat', name: 'sponsor_cat'},
-                    {data: 'sponsor_name', name: '{{config('module.sponsors.table')}}.sponsor_name'},
-                    {data: 'sponsor_picture', name: '{{config('module.sponsors.table')}}.sponsor_picture'},
+                    {data: 'id', name: '{{config('module.sponsorcategories.table')}}.id'},
+                    {data: 'sponsor_category', name: '{{config('module.sponsorcategories.table')}}.sponsor_category'},
+                    {data: 'created_at', name: '{{config('module.sponsorcategories.table')}}.created_at'},
                     {data: 'actions', name: 'actions', searchable: false, sortable: false}
                 ],
                 order: [[0, "asc"]],

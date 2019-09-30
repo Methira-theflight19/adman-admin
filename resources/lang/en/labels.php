@@ -296,6 +296,16 @@ return [
 	"createdat" => "Created At",
 	],
 	],
+	"sponsorcategories" => [
+	"create" => "Create SponsorCategory",
+	"edit" => "Edit SponsorCategory",
+	"management" => "SponsorCategory Management",
+	"title" => "SponsorCategories",
+	"table" => [
+	"id" => "Id",
+	"createdat" => "Created At",
+	],
+	],
 	],
 	"frontend" => [
 	"auth" => [

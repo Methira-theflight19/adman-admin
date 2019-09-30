@@ -9,6 +9,31 @@
         @endif
 
     </div><!--form control-->
+
+    <div class="form-group">
+    <label for="content" class="control-label required">Menu Category</label> 
+    <select class="form-control custom-select" name="sponsor_category" id="sponsor_category" data-toggle="select2" required>
+  
+  
+    @if(!empty($selectedsponsorcat))
+        @foreach($sponsorCategory as $sponsorcat)
+            @if($sponsorcat['id'] == $selectedsponsorcat[0])
+                <option selected value="{{$sponsorcat->id}}">{{$sponsorcat->sponsor_category}}</option>
+            @else
+                <option value="{{$sponsorcat->id}}">{{$sponsorcat->sponsor_category}}</option>
+            @endif
+        @endforeach
+    @else
+                <option value="" >None</option>
+            @foreach($sponsorCategory as $sponsorcat)
+                <option value="{{$sponsorcat->id}}">{{$sponsorcat->sponsor_category}}</option>
+            @endforeach
+    @endif
+
+    
+    </select>
+
+</div>
     <div class="form-group pd-3">
             <label for="content" class="control-label required">Sponsor picture</label> 
             

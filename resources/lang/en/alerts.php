@@ -84,5 +84,10 @@ return [
 	"deleted" => "The MenuCategory was successfully deleted.",
 	"updated" => "The MenuCategory was successfully updated.",
 	],
+	"sponsorcategories" => [
+	"created" => "The SponsorCategory was successfully created.",
+	"deleted" => "The SponsorCategory was successfully deleted.",
+	"updated" => "The SponsorCategory was successfully updated.",
+	],
 	],
 ];

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Responses\Backend\Sponsor;
+namespace App\Http\Responses\Backend\SponsorCategory;
 
 use Illuminate\Contracts\Support\Responsable;
 
@@ -13,17 +13,8 @@ class CreateResponse implements Responsable
      *
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
-
-    protected $sponsorCategory;
-    public function __construct($sponsorCategory)
-    {
-        $this->sponsorCategory = $sponsorCategory;
-    }
-
     public function toResponse($request)
     {
-        return view('backend.sponsors.create')->with([
-            'sponsorCategory' => $this->sponsorCategory,
-        ]);
+        return view('backend.sponsorcategories.create');
     }
 }

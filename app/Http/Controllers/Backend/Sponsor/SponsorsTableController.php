@@ -7,7 +7,7 @@ use App\Http\Controllers\Controller;
 use Yajra\DataTables\Facades\DataTables;
 use App\Repositories\Backend\Sponsor\SponsorRepository;
 use App\Http\Requests\Backend\Sponsor\ManageSponsorRequest;
-
+use App\Models\SponsorCategory\Sponsorcategory;
 /**
  * Class SponsorsTableController.
  */
@@ -38,6 +38,11 @@ class SponsorsTableController extends Controller
     {
         return Datatables::of($this->sponsor->getForDataTable())
             ->escapeColumns(['id'])
+            ->addColumn('sponsor_cat', function ($sponsor) {
+                $selectedcat = $sponsor->category->pluck('id');
+                $sponsorCategory = Sponsorcategory::where('id',$selectedcat[0])->first();
+                 return $sponsorCategory->sponsor_category;
+            })
             ->addColumn('sponsor_picture', function ($sponsor) {
                 $url= asset('storage/img/sponsor/'.$sponsor->sponsor_picture);
                  return '<img src="'.$url.'" border="0" width="100%" class="img-rounded" align="center" />';

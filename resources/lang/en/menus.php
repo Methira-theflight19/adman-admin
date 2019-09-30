@@ -150,6 +150,13 @@ return [
 	"management" => "MenuCategory Management",
 	"main" => "MenuCategories",
 	],
+	"sponsorcategories" => [
+	"all" => "All SponsorCategories",
+	"create" => "Create SponsorCategory",
+	"edit" => "Edit SponsorCategory",
+	"management" => "SponsorCategory Management",
+	"main" => "SponsorCategories",
+	],
 	],
 	"language-picker" => [
 	"language" => "Language",
