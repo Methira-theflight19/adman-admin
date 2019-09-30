@@ -12,7 +12,7 @@ Route::group(['namespace' => 'Backend', 'prefix' => 'admin', 'as' => 'admin.', '
         Route::resource('banners', 'BannersController');
         //For Datatable
         Route::post('banners/get', 'BannersTableController')->name('banners.get');
-        Route::post('banners/get/list', 'BannersTableController@list')->name('banners.getlist');
+        Route::post('banners/get/{id}', 'BannersTableController@BannerlistByMenu')->name('banners.getlist');
         Route::get('/list/banners','BannersTableController@listView')->name('banners.list');
     });
     

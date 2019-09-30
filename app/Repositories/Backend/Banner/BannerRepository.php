@@ -43,7 +43,7 @@ class BannerRepository extends BaseRepository
         $this->storage = Storage::disk('public');
     }
 
-    public function getForDataTable()
+    public function getForDataTable($banner)
     {
         return $this->query()
             ->select([

@@ -8,6 +8,7 @@ use Yajra\DataTables\Facades\DataTables;
 use App\Repositories\Backend\Banner\BannerRepository;
 use App\Http\Requests\Backend\Banner\ManageBannerRequest;
 use App\Http\Responses\ViewResponse;
+use App\Models\MenuCategory\Menucategory;
 
 /**
  * Class BannersTableController.
@@ -42,38 +43,26 @@ class BannersTableController extends Controller
      */
     public function __invoke(ManageBannerRequest $request)
     {   
+        //banner index table
+        return Datatables::of($this->banner->getForDataTable($this->banner))
+            ->escapeColumns(['id'])
+            ->addColumn('menu', function ($banner) {
+                $selectedmenu = $banner->menu->pluck('id');
+                $menuCategories = Menucategory::where('id',$selectedmenu[0])->first();
+                 return $menuCategories->menu_name;
+            })
+            ->addColumn('banner_picture', function ($banner) {
+                $url= asset('storage/img/banner/'.$banner->banner_picture);
+                 return '<img src="'.$url.'" border="0" width="100%" class="img-rounded" align="center" />';
+            })
+            ->addColumn('created_at', function ($banner) {
+                return Carbon::parse($banner->created_at)->toDateString();
+            })
+            ->addColumn('actions', function ($banner) {
+                return $banner->action_buttons;
+            })
+            ->make(true);
+    }
 
-        //banner index table
-        return Datatables::of($this->banner->getForDataTable())
-            ->escapeColumns(['id'])
-            ->addColumn('banner_picture', function ($banner) {
-                $url= asset('storage/img/banner/'.$banner->banner_picture);
-                 return '<img src="'.$url.'" border="0" width="100%" class="img-rounded" align="center" />';
-            })
-            ->addColumn('created_at', function ($banner) {
-                return Carbon::parse($banner->created_at)->toDateString();
-            })
-            ->addColumn('actions', function ($banner) {
-                return $banner->action_buttons;
-            })
-            ->make(true);
-    }
-    public function list(ManageBannerRequest $request)
-    {   
-        
-        //banner index table
-        return Datatables::of($this->banner->getForDataTable()->where('banner_list', '=', "0"))
-            ->escapeColumns(['id'])
-            ->addColumn('banner_picture', function ($banner) {
-                $url= asset('storage/img/banner/'.$banner->banner_picture);
-                 return '<img src="'.$url.'" border="0" width="100%" class="img-rounded" align="center" />';
-            })
-            ->addColumn('created_at', function ($banner) {
-                return Carbon::parse($banner->created_at)->toDateString();
-            })
-            ->addColumn('actions', function ($banner) {
-                return $banner->action_buttons;
-            })
-            ->make(true);
-    }
+
 }

@@ -13,7 +13,7 @@
 
 <div class="form-group">
     <label for="content" class="control-label required">Menu Category</label> 
-    <select class="form-control custom-select" name="menu_category" id="menu_category" data-toggle="select2" require>
+    <select class="form-control custom-select" name="menu_category" id="menu_category" data-toggle="select2" required>
   
     @if(!empty($selectedmenu))
         @foreach($menuCategories as $menu)
@@ -24,7 +24,7 @@
             @endif
         @endforeach
     @else
-                <option selected disabled>choose menu</option>
+                <option value="" >None</option>
             @foreach($menuCategories as $menu)
                 <option value="{{$menu->id}}">{{$menu->menu_name}}</option>
             @endforeach
@@ -55,12 +55,12 @@
 </div><!--form control-->
 
 <div class="checkbox checkbox-info ml-2 mb-2">
-
+            <!-- bannerlist not use -->
             <input id='banner_list' type='hidden' value='0' name='banner_list'>        
-            <input id="checkbox4" type="checkbox" name="banner_list" value="1">
+            <!-- <input id="checkbox4" type="checkbox" name="banner_list" value="1">
             <label for="checkbox4">
                 Banner list
-            </label>
+            </label> -->
 </div> 
 <div class="form-group">
     <label for="content" class="control-label required">Link</label> 

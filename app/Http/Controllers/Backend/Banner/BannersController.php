@@ -6,7 +6,8 @@ use App\Models\Banner\Banner;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Http\Responses\RedirectResponse;
-use App\Http\Responses\ViewResponse;
+// use App\Http\Responses\ViewResponse;
+use App\Http\Responses\Backend\Banner\IndexResponse;
 use App\Http\Responses\Backend\Banner\CreateResponse;
 use App\Http\Responses\Backend\Banner\EditResponse;
 use App\Repositories\Backend\Banner\BannerRepository;
@@ -48,7 +49,8 @@ class BannersController extends Controller
      */
     public function index(ManageBannerRequest $request)
     {
-        return new ViewResponse('backend.banners.index');
+        $menuCategories = Menucategory::all();
+        return new IndexResponse($menuCategories);
     }
 
     /**

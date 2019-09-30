@@ -4,8 +4,22 @@ namespace App\Http\Responses\Backend\Banner;
 
 use Illuminate\Contracts\Support\Responsable;
 
-class CreateResponse implements Responsable
+class IndexResponse implements Responsable
 {
+    /**
+     * @var App\Models\Banner\Banner
+     */
+
+    protected $menuCategories;
+
+    /**
+     * @param App\Models\Banner\Banner $banners
+     */
+    public function __construct($menuCategories)
+    {
+        $this->menuCategories = $menuCategories;
+    }
+
     /**
      * To Response
      *
@@ -14,16 +28,11 @@ class CreateResponse implements Responsable
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
 
-    protected $menuCategories;
-    public function __construct($menuCategories)
-    {
-        $this->menuCategories = $menuCategories;
-    }
-
     public function toResponse($request)
     {
-        return view('backend.banners.create')->with([
+        return view('backend.banners.index')->with([
             'menuCategories' => $this->menuCategories,
+
         ]);
     }
 }

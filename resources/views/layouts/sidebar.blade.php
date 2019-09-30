@@ -55,11 +55,11 @@
                             <a href="{{ route('admin.menucategories.index') }}">Menu Category</a>
                         </li>
                         <li>
-                            <a href="{{ url('/admin/list/banners') }}">All</a>
+                            <a href="{{ route('admin.banners.index') }}">All Banner</a>
                         </li>
-                        <li>
+                        <!-- <li>
                             <a href="{{ route('admin.banners.index') }}">Home</a>
-                        </li>
+                        </li> -->
                         <!-- <li>
                             <a href="{{ url('/admin/banners/2/edit') }}">About Us</a>
                         </li>
