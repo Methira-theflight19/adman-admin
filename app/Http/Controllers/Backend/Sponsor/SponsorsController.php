@@ -83,8 +83,8 @@ class SponsorsController extends Controller
      */
     public function edit(Sponsor $sponsor, EditSponsorRequest $request)
     {
-        $sponsorCategory = Sponsorcategory::all();
-        return new EditResponse($sponsor, $sponsorCategory);
+        $sponsorcategory = Sponsorcategory::all();
+        return new EditResponse($sponsor, $sponsorcategory);
     }
     /**
      * Update the specified resource in storage.

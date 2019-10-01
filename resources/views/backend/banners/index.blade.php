@@ -18,6 +18,8 @@
             <div class="box-tools pull-right">
                 @include('backend.banners.partials.banners-header-buttons')
             </div>
+
+            <a id="menucat">test</a>
         </div><!--box-header with-border-->
 
         <div class="box-body">
@@ -58,6 +60,10 @@
                     'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
                 }
             });
+            $("#menucat").click(function () {
+               console.log("test")
+            });
+
             
             var dataTable = $('#banners-table').dataTable({
                 processing: true,

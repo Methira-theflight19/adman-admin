@@ -10,7 +10,7 @@
 @endsection
 
 @section('content')
-    {{ Form::model($sponsorcategories, ['route' => ['admin.sponsorcategories.update', $sponsorcategory], 'class' => 'form-horizontal', 'role' => 'form', 'method' => 'PATCH', 'id' => 'edit-sponsorcategory']) }}
+    {{ Form::model($sponsorcategories, ['route' => ['admin.sponsorcategories.update', $sponsorcategories], 'class' => 'form-horizontal', 'role' => 'form', 'method' => 'PATCH', 'id' => 'edit-sponsorcategory']) }}
 
         <div class="card box box-info">
             <div class="box-header with-border">
