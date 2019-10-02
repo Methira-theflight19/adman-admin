@@ -12,9 +12,9 @@
 @section('content')
     {{ Form::model($dummy_small_plural_model, ['route' => ['admin.dummy_small_plural_model.update', $dummy_small_model], 'class' => 'form-horizontal', 'role' => 'form', 'method' => 'PATCH', 'id' => 'edit-dummy_small_model']) }}
 
-        <div class="box box-info">
+        <div class="card box box-info">
             <div class="box-header with-border">
-                <h3 class="box-title">{{ trans('labels.backend.dummy_small_plural_model.edit') }}</h3>
+                <h3 class="box-title ml-3">{{ trans('labels.backend.dummy_small_plural_model.edit') }}</h3>
 
                 <div class="box-tools pull-right">
                     @include('backend.dummy_small_plural_model.partials.dummy_small_plural_model-header-buttons')
@@ -27,7 +27,7 @@
                     @include("backend.dummy_small_plural_model.form")
                     <div class="edit-form-btn">
                         {{ link_to_route('admin.dummy_small_plural_model.index', trans('buttons.general.cancel'), [], ['class' => 'btn btn-danger btn-md']) }}
-                        {{ Form::submit(trans('buttons.general.crud.update'), ['class' => 'btn btn-primary btn-md']) }}
+                        {{ Form::submit(trans('buttons.general.crud.update'), ['class' => 'btn btn-blue btn-md']) }}
                         <div class="clearfix"></div>
                     </div><!--edit-form-btn-->
                 </div><!--form-group-->
