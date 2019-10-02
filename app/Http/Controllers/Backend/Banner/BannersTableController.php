@@ -53,7 +53,7 @@ class BannersTableController extends Controller
             })
             ->addColumn('banner_picture', function ($banner) {
                 $url= asset('storage/img/banner/'.$banner->banner_picture);
-                 return '<img src="'.$url.'" border="0" width="100%" class="img-rounded" align="center" />';
+                 return '<img src="'.$url.'" border="0" width="100px" class="img-rounded" align="center" />';
             })
             ->addColumn('created_at', function ($banner) {
                 return Carbon::parse($banner->created_at)->toDateString();

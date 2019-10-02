@@ -157,6 +157,13 @@ return [
 	"management" => "SponsorCategory Management",
 	"main" => "SponsorCategories",
 	],
+	"activities" => [
+	"all" => "All Activities",
+	"create" => "Create Activity",
+	"edit" => "Edit Activity",
+	"management" => "Activity Management",
+	"main" => "Activities",
+	],
 	],
 	"language-picker" => [
 	"language" => "Language",

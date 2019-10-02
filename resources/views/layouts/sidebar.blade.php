@@ -97,6 +97,13 @@
                     </ul>
                 </li>
 
+                <li>
+                    <a href="{{ route('admin.activities.index') }}">
+                        <i class="fe-film"></i>
+                        <span> Activity </span>
+                    </a>
+                </li>
+
            
                 <!-- <li>
                     <a href="{{ route('admin.menus.index') }}">

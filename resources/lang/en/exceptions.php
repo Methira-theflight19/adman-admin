@@ -127,6 +127,13 @@ return [
 	"not_found" => "That SponsorCategory does not exist.",
 	"update_error" => "There was a problem updating this SponsorCategory. Please try again.",
 	],
+	"activities" => [
+	"already_exists" => "That Activity already exists. Please choose a different name.",
+	"create_error" => "There was a problem creating this Activity. Please try again.",
+	"delete_error" => "There was a problem deleting this Activity. Please try again.",
+	"not_found" => "That Activity does not exist.",
+	"update_error" => "There was a problem updating this Activity. Please try again.",
+	],
 	],
 	"frontend" => [
 	"auth" => [

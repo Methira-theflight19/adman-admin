@@ -306,6 +306,16 @@ return [
 	"createdat" => "Created At",
 	],
 	],
+	"activities" => [
+	"create" => "Create Activity",
+	"edit" => "Edit Activity",
+	"management" => "Activity Management",
+	"title" => "Activities",
+	"table" => [
+	"id" => "Id",
+	"createdat" => "Created At",
+	],
+	],
 	],
 	"frontend" => [
 	"auth" => [

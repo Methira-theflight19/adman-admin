@@ -21,3 +21,4 @@ require __DIR__.'/Banner.php';
 require __DIR__.'/Sponsor.php';
 require __DIR__.'/Menucategory.php';
 require __DIR__.'/Sponsorcategory.php';
+require __DIR__.'/Activity.php';

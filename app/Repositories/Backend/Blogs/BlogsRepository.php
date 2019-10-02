@@ -246,7 +246,6 @@ class BlogsRepository extends BaseRepository
     public function deleteOldFile($model)
     {
         $fileName = $model->featured_image;
-
         return $this->storage->delete($this->upload_path.$fileName);
     }
 }

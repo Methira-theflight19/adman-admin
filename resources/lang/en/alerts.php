@@ -89,5 +89,10 @@ return [
 	"deleted" => "The SponsorCategory was successfully deleted.",
 	"updated" => "The SponsorCategory was successfully updated.",
 	],
+	"activities" => [
+	"created" => "The Activity was successfully created.",
+	"deleted" => "The Activity was successfully deleted.",
+	"updated" => "The Activity was successfully updated.",
+	],
 	],
 ];

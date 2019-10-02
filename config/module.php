@@ -41,4 +41,7 @@ return [
 	"sponsorcategories" => [
 	"table" => "sponsor_categories",
 	],
+	"activities" => [
+	"table" => "activities",
+	],
 ];
