@@ -326,6 +326,16 @@ return [
 	"createdat" => "Created At",
 	],
 	],
+	"topictalks" => [
+	"create" => "Create TopicTalk",
+	"edit" => "Edit TopicTalk",
+	"management" => "TopicTalk Management",
+	"title" => "TopicTalks",
+	"table" => [
+	"id" => "Id",
+	"createdat" => "Created At",
+	],
+	],
 	],
 	"frontend" => [
 	"auth" => [

@@ -171,6 +171,13 @@ return [
 	"management" => "Program Management",
 	"main" => "Programs",
 	],
+	"topictalks" => [
+	"all" => "All TopicTalks",
+	"create" => "Create TopicTalk",
+	"edit" => "Edit TopicTalk",
+	"management" => "TopicTalk Management",
+	"main" => "TopicTalks",
+	],
 	],
 	"language-picker" => [
 	"language" => "Language",

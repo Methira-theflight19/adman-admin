@@ -1,5 +1,5 @@
 <!--Action Button-->
-@if( Active::checkUriPattern( 'admin/dummy_small_plural_model' ) )
+@if( Active::checkUriPattern( 'admin/topictalks' ) )
     <div class="btn-group">
         <button type="button" class="btn btn-warning btn-flat dropdown-toggle" data-toggle="dropdown">Export
             <span class="fas fa-caret-down"></span>
@@ -22,17 +22,17 @@
     </button>
     <ul class="dropdown-menu dropdown-menu-right" role="menu">
         <li>
-            <a href="{{ route( 'admin.dummy_small_plural_model.index' ) }}">
-                <i class="fa fa-list-ul"></i> {{ trans( 'menus.backend.dummy_small_plural_model.all' ) }}
+            <a href="{{ route( 'admin.topictalks.index' ) }}">
+                <i class="fa fa-list-ul"></i> {{ trans( 'menus.backend.topictalks.all' ) }}
             </a>
         </li>
-        @create@permission( 'create-dummy_small_model' )
+        @permission( 'create-topictalk' )
             <li>
-                <a href="{{ route( 'admin.dummy_small_plural_model.create' ) }}">
-                    <i class="fa fa-plus"></i> {{ trans( 'menus.backend.dummy_small_plural_model.create' ) }}
+                <a href="{{ route( 'admin.topictalks.create' ) }}">
+                    <i class="fa fa-plus"></i> {{ trans( 'menus.backend.topictalks.create' ) }}
                 </a>
             </li>
-        @endauth@endCreate
+        @endauth
     </ul>
 </div>
 <div class="clearfix"></div>

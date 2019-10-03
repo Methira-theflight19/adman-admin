@@ -97,11 +97,24 @@
                                 <span>Program</span>
                             </a>
                         </li>
+                        <li>
+                            <a href="javascript: void(0);">
+                                <span>Talk Management</span>
+                                <span class="menu-arrow"></span>
+                            </a>
+                            <ul class="nav-second-level" aria-expanded="false">
+                                <li>
+                                    <a href="{{ route('admin.topictalks.index') }}">
+                                        <span>Topic Talk</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
                     </ul>
                 </li>
 
                 
-
+                
            
                 <!-- <li>
                     <a href="{{ route('admin.menus.index') }}">

@@ -1,4 +1,4 @@
-@extends ('backend.layouts.app')
+@extends ('layouts.master')
 
 @section ('title', trans('labels.backend.dummy_small_plural_model.management') . ' | ' . trans('labels.backend.dummy_small_plural_model.edit'))
 

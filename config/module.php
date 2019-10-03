@@ -47,4 +47,7 @@ return [
 	"programs" => [
 	"table" => "programs",
 	],
+	"topictalks" => [
+	"table" => "topictalks",
+	],
 ];

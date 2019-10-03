@@ -1,38 +1,39 @@
 @extends ('layouts.master')
 
-@section ('title', trans('labels.backend.dummy_small_plural_model.management'))
+@section ('title', trans('labels.backend.topictalks.management'))
 
 @section('page-header')
-    <h1>{{ trans('labels.backend.dummy_small_plural_model.management') }}</h1>
+    <h1>{{ trans('labels.backend.topictalks.management') }}</h1>
 @endsection
 
 @section('content')
     <div class="card box box-info">
         <div class="box-header with-border">
-            <h3 class="box-title">{{ trans('labels.backend.dummy_small_plural_model.management') }}</h3>
+            <h3 class="box-title">{{ trans('labels.backend.topictalks.management') }}</h3>
 
             <div class="box-tools pull-right">
-                @include('backend.dummy_small_plural_model.partials.dummy_small_plural_model-header-buttons')
+                @include('backend.topictalks.partials.topictalks-header-buttons')
             </div>
         </div><!--box-header with-border-->
 
         <div class="box-body">
             <div class="table-responsive data-table-wrapper">
-                <table id="dummy_small_plural_model-table" class="w-100 table table-condensed table-hover table-bordered">
+                <table id="topictalks-table" class="w-100 table table-condensed table-hover table-bordered">
                     <thead>
                         <tr>
-                            <th>{{ trans('labels.backend.dummy_small_plural_model.table.id') }}</th>
-                            <th>{{ trans('labels.backend.dummy_small_plural_model.table.createdat') }}</th>
+                            <th>{{ trans('labels.backend.topictalks.table.id') }}</th>
+                            <th>Name</th>
+                            <th>{{ trans('labels.backend.topictalks.table.createdat') }}</th>
                             <th>{{ trans('labels.general.actions') }}</th>
                         </tr>
                     </thead>
-                    <thead class="transparent-bg">
+                    <!-- <thead class="transparent-bg">
                         <tr>
                             <th></th>
                             <th></th>
                             <th></th>
                         </tr>
-                    </thead>
+                    </thead> -->
                 </table>
             </div><!--table-responsive-->
         </div><!-- /.box-body -->
@@ -52,16 +53,17 @@
                 }
             });
             
-            var dataTable = $('#dummy_small_plural_model-table').dataTable({
+            var dataTable = $('#topictalks-table').dataTable({
                 processing: true,
                 serverSide: true,
                 ajax: {
-                    url: '{{ route("admin.dummy_small_plural_model.get") }}',
+                    url: '{{ route("admin.topictalks.get") }}',
                     type: 'post'
                 },
                 columns: [
-                    {data: 'id', name: '{{config('module.dummy_small_plural_model.table')}}.id'},
-                    {data: 'created_at', name: '{{config('module.dummy_small_plural_model.table')}}.created_at'},
+                    {data: 'id', name: '{{config('module.topictalks.table')}}.id'},
+                    {data: 'name', name: '{{config('module.topictalks.table')}}.name'},
+                    {data: 'created_at', name: '{{config('module.topictalks.table')}}.created_at'},
                     {data: 'actions', name: 'actions', searchable: false, sortable: false}
                 ],
                 order: [[0, "asc"]],

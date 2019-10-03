@@ -141,6 +141,13 @@ return [
 	"not_found" => "That Program does not exist.",
 	"update_error" => "There was a problem updating this Program. Please try again.",
 	],
+	"topictalks" => [
+	"already_exists" => "That TopicTalk already exists. Please choose a different name.",
+	"create_error" => "There was a problem creating this TopicTalk. Please try again.",
+	"delete_error" => "There was a problem deleting this TopicTalk. Please try again.",
+	"not_found" => "That TopicTalk does not exist.",
+	"update_error" => "There was a problem updating this TopicTalk. Please try again.",
+	],
 	],
 	"frontend" => [
 	"auth" => [

@@ -1,10 +1,10 @@
 <div class="box-body">
     <div class="form-group">
-        <label for="content" class="control-label required">Banner name</label> 
-    @if(!empty($test))
-        <input class="form-control" placeholder="Banner name" name="banner_name" type="text" id="banner_name" value="{{ $test>name}}">
+        <label for="content" class="control-label required">Topic Talk Name</label> 
+    @if(!empty($topictalks))
+        <input class="form-control" placeholder="topic talk name" name="name" type="text" id="name" value="{{ $topictalks->name}}">
     @else   
-        <input class="form-control" placeholder="Banner name" name="banner_name" type="text" id="banner_name" >
+        <input class="form-control" placeholder="topic talk name" name="name" type="text" id="name" >
     @endif
 </div><!--form control-->
 </div><!--box-body-->

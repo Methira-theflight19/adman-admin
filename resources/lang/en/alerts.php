@@ -99,5 +99,10 @@ return [
 	"deleted" => "The Program was successfully deleted.",
 	"updated" => "The Program was successfully updated.",
 	],
+	"topictalks" => [
+	"created" => "The TopicTalk was successfully created.",
+	"deleted" => "The TopicTalk was successfully deleted.",
+	"updated" => "The TopicTalk was successfully updated.",
+	],
 	],
 ];
