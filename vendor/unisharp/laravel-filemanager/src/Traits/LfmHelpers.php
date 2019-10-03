@@ -97,23 +97,43 @@ trait LfmHelpers
      */
     public function getPathPrefix($type)
     {
-        $default_folder_name = 'files';
-        if ($this->isProcessingImages()) {
-            $default_folder_name = 'photos';
-        }
+        // $default_folder_name = 'files';
+        // if ($this->isProcessingImages()) {
+        //     $default_folder_name = 'photos';
+        // }
 
-        $prefix = config('lfm.' . $this->currentLfmType() . 's_folder_name', $default_folder_name);
-        $base_directory = config('lfm.base_directory', 'public');
+        // $prefix = config('lfm.' . $this->currentLfmType() . 's_folder_name', $default_folder_name);
+        // $base_directory = config('lfm.base_directory', 'public');
 
-        if ($type === 'dir') {
-            $prefix = $base_directory . '/' . $prefix;
-        }
+        // if ($type === 'dir') {
+        //     $prefix = $base_directory . '/' . $prefix;
+        // }
 
-        if ($type === 'url' && $base_directory !== 'public') {
-            $prefix = config('lfm.url_prefix', config('lfm.prefix', 'laravel-filemanager')) . '/' . $prefix;
-        }
+        // if ($type === 'url' && $base_directory !== 'public') {
+        //     $prefix = config('lfm.url_prefix', config('lfm.prefix', 'laravel-filemanager')) . '/' . $prefix;
+        // }
 
-        return $prefix;
+        // return $prefix;
+
+        $default_folder_name = 'storage/files';
+            if ($this->isProcessingImages()) {
+                $default_folder_name = 'storage/files';
+            }
+
+            //$prefix = config('lfm.' . $this->currentLfmType() . 's_folder_name', $default_folder_name);
+            $prefix = 'storage/files';
+            //$base_directory = config('lfm.base_directory', 'public');
+            $base_directory = 'public';
+            if ($type === 'dir') {
+                $prefix = $base_directory . '/' . $prefix;
+            }
+
+            if ($type === 'url' && $base_directory !== 'public') {
+                $prefix = config('lfm.url_prefix', config('lfm.prefix', 'laravel-filemanager')) . '/' . $prefix;
+            }
+
+            return $prefix;
+
     }
 
     /**

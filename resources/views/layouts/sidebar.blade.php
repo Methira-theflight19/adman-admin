@@ -57,24 +57,6 @@
                         <li>
                             <a href="{{ route('admin.banners.index') }}">All Banner</a>
                         </li>
-                        <!-- <li>
-                            <a href="{{ route('admin.banners.index') }}">Home</a>
-                        </li> -->
-                        <!-- <li>
-                            <a href="{{ url('/admin/banners/2/edit') }}">About Us</a>
-                        </li>
-                        <li>
-                            <a href="{{  url('admin/banners/3/edit')}}">Award</a>
-                        </li>
-                        <li>
-                            <a href="{{ url('/admin/banners/4/edit') }}">Activity</a>
-                        </li>
-                        <li>
-                            <a href="{{ url('admin/banners/5/edit') }}">Winner</a>
-                        </li>
-                        <li>
-                            <a href="{{ url('admin/banners/6/edit') }}">Archive</a>
-                        </li> -->
                     </ul>
                 </li>
                 <li>
@@ -103,6 +85,22 @@
                         <span> Activity </span>
                     </a>
                 </li>
+                <li>
+                    <a href="javascript: void(0);">
+                        <i class="fe-thumbs-up"></i>
+                        <span>Creative Day</span>
+                        <span class="menu-arrow"></span>
+                    </a>
+                    <ul class="nav-second-level" aria-expanded="false">
+                        <li>
+                            <a href="{{ route('admin.programs.index') }}">
+                                <span>Program</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+                
 
            
                 <!-- <li>

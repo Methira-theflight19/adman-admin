@@ -164,6 +164,13 @@ return [
 	"management" => "Activity Management",
 	"main" => "Activities",
 	],
+	"programs" => [
+	"all" => "All Programs",
+	"create" => "Create Program",
+	"edit" => "Edit Program",
+	"management" => "Program Management",
+	"main" => "Programs",
+	],
 	],
 	"language-picker" => [
 	"language" => "Language",

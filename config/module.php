@@ -44,4 +44,7 @@ return [
 	"activities" => [
 	"table" => "activities",
 	],
+	"programs" => [
+	"table" => "programs",
+	],
 ];

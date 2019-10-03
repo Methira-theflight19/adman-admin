@@ -134,6 +134,13 @@ return [
 	"not_found" => "That Activity does not exist.",
 	"update_error" => "There was a problem updating this Activity. Please try again.",
 	],
+	"programs" => [
+	"already_exists" => "That Program already exists. Please choose a different name.",
+	"create_error" => "There was a problem creating this Program. Please try again.",
+	"delete_error" => "There was a problem deleting this Program. Please try again.",
+	"not_found" => "That Program does not exist.",
+	"update_error" => "There was a problem updating this Program. Please try again.",
+	],
 	],
 	"frontend" => [
 	"auth" => [

@@ -94,5 +94,10 @@ return [
 	"deleted" => "The Activity was successfully deleted.",
 	"updated" => "The Activity was successfully updated.",
 	],
+	"programs" => [
+	"created" => "The Program was successfully created.",
+	"deleted" => "The Program was successfully deleted.",
+	"updated" => "The Program was successfully updated.",
+	],
 	],
 ];

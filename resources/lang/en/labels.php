@@ -316,6 +316,16 @@ return [
 	"createdat" => "Created At",
 	],
 	],
+	"programs" => [
+	"create" => "Create Program",
+	"edit" => "Edit Program",
+	"management" => "Program Management",
+	"title" => "Programs",
+	"table" => [
+	"id" => "Id",
+	"createdat" => "Created At",
+	],
+	],
 	],
 	"frontend" => [
 	"auth" => [
