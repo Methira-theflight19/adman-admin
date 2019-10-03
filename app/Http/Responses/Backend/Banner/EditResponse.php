@@ -42,16 +42,4 @@ class EditResponse implements Responsable
         ]);
     }
 
-    // public function toResponse($request)
-    // {
-
-    //     $selectedmenu =  MenuMapBanner::where('banner_id', $this->banners->id)->first();
-
-    //     return view('backend.banners.edit')->with([
-    //         'banners' => $this->banners,
-    //         'menuCategories' => $this->menuCategories,
-    //         'selectedmenu' => $selectedmenu,
-
-    //     ]);
-    // }
 }

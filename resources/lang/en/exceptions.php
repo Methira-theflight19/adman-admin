@@ -148,6 +148,13 @@ return [
 	"not_found" => "That TopicTalk does not exist.",
 	"update_error" => "There was a problem updating this TopicTalk. Please try again.",
 	],
+	"roomcategories" => [
+	"already_exists" => "That RoomCategory already exists. Please choose a different name.",
+	"create_error" => "There was a problem creating this RoomCategory. Please try again.",
+	"delete_error" => "There was a problem deleting this RoomCategory. Please try again.",
+	"not_found" => "That RoomCategory does not exist.",
+	"update_error" => "There was a problem updating this RoomCategory. Please try again.",
+	],
 	],
 	"frontend" => [
 	"auth" => [

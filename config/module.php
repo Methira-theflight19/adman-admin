@@ -50,4 +50,7 @@ return [
 	"topictalks" => [
 	"table" => "topictalks",
 	],
+	"roomcategories" => [
+	"table" => "roomcategories",
+	],
 ];

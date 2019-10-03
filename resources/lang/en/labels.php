@@ -336,6 +336,16 @@ return [
 	"createdat" => "Created At",
 	],
 	],
+	"roomcategories" => [
+	"create" => "Create RoomCategory",
+	"edit" => "Edit RoomCategory",
+	"management" => "RoomCategory Management",
+	"title" => "RoomCategories",
+	"table" => [
+	"id" => "Id",
+	"createdat" => "Created At",
+	],
+	],
 	],
 	"frontend" => [
 	"auth" => [

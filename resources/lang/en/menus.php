@@ -178,6 +178,13 @@ return [
 	"management" => "TopicTalk Management",
 	"main" => "TopicTalks",
 	],
+	"roomcategories" => [
+	"all" => "All RoomCategories",
+	"create" => "Create RoomCategory",
+	"edit" => "Edit RoomCategory",
+	"management" => "RoomCategory Management",
+	"main" => "RoomCategories",
+	],
 	],
 	"language-picker" => [
 	"language" => "Language",
