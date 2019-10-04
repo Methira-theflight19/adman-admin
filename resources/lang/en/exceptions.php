@@ -162,6 +162,13 @@ return [
 	"not_found" => "That TalkDetail does not exist.",
 	"update_error" => "There was a problem updating this TalkDetail. Please try again.",
 	],
+	"talkphotos" => [
+	"already_exists" => "That TalkPhoto already exists. Please choose a different name.",
+	"create_error" => "There was a problem creating this TalkPhoto. Please try again.",
+	"delete_error" => "There was a problem deleting this TalkPhoto. Please try again.",
+	"not_found" => "That TalkPhoto does not exist.",
+	"update_error" => "There was a problem updating this TalkPhoto. Please try again.",
+	],
 	],
 	"frontend" => [
 	"auth" => [

@@ -356,6 +356,16 @@ return [
 	"createdat" => "Created At",
 	],
 	],
+	"talkphotos" => [
+	"create" => "Create TalkPhoto",
+	"edit" => "Edit TalkPhoto",
+	"management" => "TalkPhoto Management",
+	"title" => "TalkPhotos",
+	"table" => [
+	"id" => "Id",
+	"createdat" => "Created At",
+	],
+	],
 	],
 	"frontend" => [
 	"auth" => [

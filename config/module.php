@@ -56,4 +56,7 @@ return [
 	"talkdetails" => [
 	"table" => "talkdetails",
 	],
+	"talkphotos" => [
+	"table" => "talkphotos",
+	],
 ];

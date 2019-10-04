@@ -192,6 +192,13 @@ return [
 	"management" => "TalkDetail Management",
 	"main" => "TalkDetails",
 	],
+	"talkphotos" => [
+	"all" => "All TalkPhotos",
+	"create" => "Create TalkPhoto",
+	"edit" => "Edit TalkPhoto",
+	"management" => "TalkPhoto Management",
+	"main" => "TalkPhotos",
+	],
 	],
 	"language-picker" => [
 	"language" => "Language",

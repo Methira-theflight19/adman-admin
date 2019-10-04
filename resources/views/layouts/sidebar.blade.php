@@ -118,6 +118,11 @@
                                         <span>Talk Detail</span>
                                     </a>
                                 </li>
+                                <li>
+                                    <a href="{{ route('admin.talkphotos.index') }}">
+                                        <span>Talk Photo</span>
+                                    </a>
+                                </li>
                             </ul>
                         </li>
                     </ul>

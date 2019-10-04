@@ -114,5 +114,10 @@ return [
 	"deleted" => "The TalkDetail was successfully deleted.",
 	"updated" => "The TalkDetail was successfully updated.",
 	],
+	"talkphotos" => [
+	"created" => "The TalkPhoto was successfully created.",
+	"deleted" => "The TalkPhoto was successfully deleted.",
+	"updated" => "The TalkPhoto was successfully updated.",
+	],
 	],
 ];

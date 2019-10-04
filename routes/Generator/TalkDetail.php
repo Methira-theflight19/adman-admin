@@ -5,7 +5,6 @@
  */
 use App\Models\TalkDetail\TalkDetail;
 use App\Http\Resources\TalkDetailResource;
-use App\Models\RoomCategory\RoomCategory;
 
 Route::group(['namespace' => 'Backend', 'prefix' => 'admin', 'as' => 'admin.', 'middleware' => 'admin'], function () {
     
@@ -25,9 +24,9 @@ Route::get('api/talkdetail', function() {
     return $sponsor;
 });
 
-// Route::get('api/talkdetail', function() {
-
-//     $sponsor = RoomCategory::with('topictalk')->get();
-//     // $sponsor = Sponsor::with('category')->wherePivot('sponsor_id', 5)->get();\
-//     return $sponsor;
-// });
+Route::get('api/creativeday/time/{id}', function($id) {
+    $room = TalkDetail::with('room')->whereHas('room', function($q) use ($id) {
+        $q->where('detail_id', '=', $id); 
+    })->get();
+    return $room;
+});
