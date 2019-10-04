@@ -346,6 +346,16 @@ return [
 	"createdat" => "Created At",
 	],
 	],
+	"talkdetails" => [
+	"create" => "Create TalkDetail",
+	"edit" => "Edit TalkDetail",
+	"management" => "TalkDetail Management",
+	"title" => "TalkDetails",
+	"table" => [
+	"id" => "Id",
+	"createdat" => "Created At",
+	],
+	],
 	],
 	"frontend" => [
 	"auth" => [

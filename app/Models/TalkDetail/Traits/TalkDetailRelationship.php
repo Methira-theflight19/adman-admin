@@ -1,12 +1,11 @@
 <?php
 
-namespace App\Models\RoomCategory\Traits;
-use App\Models\TopicTalk\TopicTalk;
-
+namespace App\Models\TalkDetail\Traits;
+use App\Models\RoomCategory\RoomCategory;
 /**
- * Class RoomCategoryRelationship
+ * Class TalkDetailRelationship
  */
-trait RoomCategoryRelationship
+trait TalkDetailRelationship
 {
     /*
     * put you model relationships here
@@ -20,9 +19,8 @@ trait RoomCategoryRelationship
         $this->belongsTo(User::class);
     }
      */
-
-    public function topictalk()
+    public function room()
     {
-        return $this->belongsToMany(TopicTalk::class, 'topic_map_room', 'room_id','topic_id');
+        return $this->belongsToMany(RoomCategory::class, 'room_map_detail', 'room_id','detail_id');
     }
 }

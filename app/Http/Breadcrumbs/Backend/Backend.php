@@ -25,3 +25,4 @@ require __DIR__.'/Activity.php';
 require __DIR__.'/Program.php';
 require __DIR__.'/TopicTalk.php';
 require __DIR__.'/RoomCategory.php';
+require __DIR__.'/TalkDetail.php';

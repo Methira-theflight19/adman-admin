@@ -53,4 +53,7 @@ return [
 	"roomcategories" => [
 	"table" => "roomcategories",
 	],
+	"talkdetails" => [
+	"table" => "talkdetails",
+	],
 ];

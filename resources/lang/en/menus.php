@@ -185,6 +185,13 @@ return [
 	"management" => "RoomCategory Management",
 	"main" => "RoomCategories",
 	],
+	"talkdetails" => [
+	"all" => "All TalkDetails",
+	"create" => "Create TalkDetail",
+	"edit" => "Edit TalkDetail",
+	"management" => "TalkDetail Management",
+	"main" => "TalkDetails",
+	],
 	],
 	"language-picker" => [
 	"language" => "Language",

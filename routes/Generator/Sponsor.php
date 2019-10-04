@@ -17,7 +17,6 @@ Route::group(['namespace' => 'Backend', 'prefix' => 'admin', 'as' => 'admin.', '
 });
 
 Route::get('api/sponsor/{spon_cat}', function($spon_cat) {
-
     $sponsor = Sponsor::with('category')->whereHas('category', function($q) use ($spon_cat) {
         $q->where('sponsor_cat_id', '=', $spon_cat); 
     })->get();

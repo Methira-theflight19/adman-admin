@@ -109,5 +109,10 @@ return [
 	"deleted" => "The RoomCategory was successfully deleted.",
 	"updated" => "The RoomCategory was successfully updated.",
 	],
+	"talkdetails" => [
+	"created" => "The TalkDetail was successfully created.",
+	"deleted" => "The TalkDetail was successfully deleted.",
+	"updated" => "The TalkDetail was successfully updated.",
+	],
 	],
 ];

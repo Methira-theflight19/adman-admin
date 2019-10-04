@@ -31,3 +31,6 @@ Route::get('api/banners/all', function() {
 Route::get('api/banners/{name}', function($name) {
     return new BannersResource(Banner::where('banner_name', '=', $name)->get());
 });
+Route::get('api/banners/test', function($id) {
+    return Banner::with('menu')->get();
+});

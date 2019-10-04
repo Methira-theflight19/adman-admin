@@ -113,6 +113,11 @@
                                         <span>Room Category</span>
                                     </a>
                                 </li>
+                                <li>
+                                    <a href="{{ route('admin.talkdetails.index') }}">
+                                        <span>Talk Detail</span>
+                                    </a>
+                                </li>
                             </ul>
                         </li>
                     </ul>

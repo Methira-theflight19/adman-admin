@@ -155,6 +155,13 @@ return [
 	"not_found" => "That RoomCategory does not exist.",
 	"update_error" => "There was a problem updating this RoomCategory. Please try again.",
 	],
+	"talkdetails" => [
+	"already_exists" => "That TalkDetail already exists. Please choose a different name.",
+	"create_error" => "There was a problem creating this TalkDetail. Please try again.",
+	"delete_error" => "There was a problem deleting this TalkDetail. Please try again.",
+	"not_found" => "That TalkDetail does not exist.",
+	"update_error" => "There was a problem updating this TalkDetail. Please try again.",
+	],
 	],
 	"frontend" => [
 	"auth" => [
