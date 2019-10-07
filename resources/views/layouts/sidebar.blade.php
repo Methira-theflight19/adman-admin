@@ -90,7 +90,14 @@
                                 <span> Chairman</span>
                             </a>
                         </li>
+                        <li>
+                            <a href="{{ route('admin.aboutcommitteecategories.index') }}">
+                                <span> Committee Category</span>
+                            </a>
+                        </li>
                     </ul>
+
+
                 </li>
                 
 

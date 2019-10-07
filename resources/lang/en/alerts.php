@@ -124,5 +124,10 @@ return [
 	"deleted" => "The AboutChairman was successfully deleted.",
 	"updated" => "The AboutChairman was successfully updated.",
 	],
+	"aboutcommitteecategories" => [
+	"created" => "The AboutCommitteeCategory was successfully created.",
+	"deleted" => "The AboutCommitteeCategory was successfully deleted.",
+	"updated" => "The AboutCommitteeCategory was successfully updated.",
+	],
 	],
 ];

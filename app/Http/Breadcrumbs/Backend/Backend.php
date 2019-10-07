@@ -28,3 +28,4 @@ require __DIR__.'/RoomCategory.php';
 require __DIR__.'/TalkDetail.php';
 require __DIR__.'/TalkPhoto.php';
 require __DIR__.'/AboutChairman.php';
+require __DIR__.'/AboutCommitteeCategory.php';

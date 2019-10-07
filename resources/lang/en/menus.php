@@ -206,6 +206,13 @@ return [
 	"management" => "AboutChairman Management",
 	"main" => "aboutchairman",
 	],
+	"aboutcommitteecategories" => [
+	"all" => "All AboutCommitteeCategories",
+	"create" => "Create AboutCommitteeCategory",
+	"edit" => "Edit AboutCommitteeCategory",
+	"management" => "AboutCommitteeCategory Management",
+	"main" => "AboutCommitteeCategories",
+	],
 	],
 	"language-picker" => [
 	"language" => "Language",

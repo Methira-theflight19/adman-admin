@@ -176,6 +176,13 @@ return [
 	"not_found" => "That AboutChairman does not exist.",
 	"update_error" => "There was a problem updating this AboutChairman. Please try again.",
 	],
+	"aboutcommitteecategories" => [
+	"already_exists" => "That AboutCommitteeCategory already exists. Please choose a different name.",
+	"create_error" => "There was a problem creating this AboutCommitteeCategory. Please try again.",
+	"delete_error" => "There was a problem deleting this AboutCommitteeCategory. Please try again.",
+	"not_found" => "That AboutCommitteeCategory does not exist.",
+	"update_error" => "There was a problem updating this AboutCommitteeCategory. Please try again.",
+	],
 	],
 	"frontend" => [
 	"auth" => [

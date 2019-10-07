@@ -376,6 +376,16 @@ return [
 	"createdat" => "Created At",
 	],
 	],
+	"aboutcommitteecategories" => [
+	"create" => "Create AboutCommitteeCategory",
+	"edit" => "Edit AboutCommitteeCategory",
+	"management" => "AboutCommitteeCategory Management",
+	"title" => "AboutCommitteeCategories",
+	"table" => [
+	"id" => "Id",
+	"createdat" => "Created At",
+	],
+	],
 	],
 	"frontend" => [
 	"auth" => [
