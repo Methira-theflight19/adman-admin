@@ -164,6 +164,12 @@
                         <span> Menus </span>
                     </a>
                 </li> -->
+                <li>
+                    <a href="{{ route('admin.winners.index') }}">
+                        <i class="fe-award "></i>
+                        <span> Winner </span>
+                    </a>
+                </li>
          
                 <li>
                     <a href="{{ route('admin.pages.index') }}">

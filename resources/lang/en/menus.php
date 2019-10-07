@@ -220,6 +220,13 @@ return [
 	"management" => "AboutCommittee Management",
 	"main" => "AboutCommittees",
 	],
+	"winners" => [
+	"all" => "All Winners",
+	"create" => "Create Winner",
+	"edit" => "Edit Winner",
+	"management" => "Winner Management",
+	"main" => "Winners",
+	],
 	],
 	"language-picker" => [
 	"language" => "Language",

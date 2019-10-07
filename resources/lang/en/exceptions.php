@@ -190,6 +190,13 @@ return [
 	"not_found" => "That AboutCommittee does not exist.",
 	"update_error" => "There was a problem updating this AboutCommittee. Please try again.",
 	],
+	"winners" => [
+	"already_exists" => "That Winner already exists. Please choose a different name.",
+	"create_error" => "There was a problem creating this Winner. Please try again.",
+	"delete_error" => "There was a problem deleting this Winner. Please try again.",
+	"not_found" => "That Winner does not exist.",
+	"update_error" => "There was a problem updating this Winner. Please try again.",
+	],
 	],
 	"frontend" => [
 	"auth" => [

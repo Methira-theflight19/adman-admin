@@ -68,4 +68,7 @@ return [
 	"aboutcommittees" => [
 	"table" => "aboutcommittees",
 	],
+	"winners" => [
+	"table" => "winners",
+	],
 ];

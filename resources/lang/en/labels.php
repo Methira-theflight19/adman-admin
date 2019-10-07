@@ -396,6 +396,16 @@ return [
 	"createdat" => "Created At",
 	],
 	],
+	"winners" => [
+	"create" => "Create Winner",
+	"edit" => "Edit Winner",
+	"management" => "Winner Management",
+	"title" => "Winners",
+	"table" => [
+	"id" => "Id",
+	"createdat" => "Created At",
+	],
+	],
 	],
 	"frontend" => [
 	"auth" => [

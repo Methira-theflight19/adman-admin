@@ -134,5 +134,10 @@ return [
 	"deleted" => "The AboutCommittee was successfully deleted.",
 	"updated" => "The AboutCommittee was successfully updated.",
 	],
+	"winners" => [
+	"created" => "The Winner was successfully created.",
+	"deleted" => "The Winner was successfully deleted.",
+	"updated" => "The Winner was successfully updated.",
+	],
 	],
 ];
