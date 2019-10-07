@@ -183,6 +183,13 @@ return [
 	"not_found" => "That AboutCommitteeCategory does not exist.",
 	"update_error" => "There was a problem updating this AboutCommitteeCategory. Please try again.",
 	],
+	"aboutcommittees" => [
+	"already_exists" => "That AboutCommittee already exists. Please choose a different name.",
+	"create_error" => "There was a problem creating this AboutCommittee. Please try again.",
+	"delete_error" => "There was a problem deleting this AboutCommittee. Please try again.",
+	"not_found" => "That AboutCommittee does not exist.",
+	"update_error" => "There was a problem updating this AboutCommittee. Please try again.",
+	],
 	],
 	"frontend" => [
 	"auth" => [

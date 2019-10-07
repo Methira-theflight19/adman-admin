@@ -95,6 +95,11 @@
                                 <span> Committee Category</span>
                             </a>
                         </li>
+                        <li>
+                            <a href="{{ route('admin.aboutcommittees.index') }}">
+                                <span> Committee Management</span>
+                            </a>
+                        </li>
                     </ul>
 
 

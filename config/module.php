@@ -65,4 +65,7 @@ return [
 	"aboutcommitteecategories" => [
 	"table" => "aboutcommitteecategories",
 	],
+	"aboutcommittees" => [
+	"table" => "aboutcommittees",
+	],
 ];

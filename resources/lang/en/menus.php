@@ -213,6 +213,13 @@ return [
 	"management" => "AboutCommitteeCategory Management",
 	"main" => "AboutCommitteeCategories",
 	],
+	"aboutcommittees" => [
+	"all" => "All AboutCommittees",
+	"create" => "Create AboutCommittee",
+	"edit" => "Edit AboutCommittee",
+	"management" => "AboutCommittee Management",
+	"main" => "AboutCommittees",
+	],
 	],
 	"language-picker" => [
 	"language" => "Language",

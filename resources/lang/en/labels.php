@@ -386,6 +386,16 @@ return [
 	"createdat" => "Created At",
 	],
 	],
+	"aboutcommittees" => [
+	"create" => "Create AboutCommittee",
+	"edit" => "Edit AboutCommittee",
+	"management" => "AboutCommittee Management",
+	"title" => "AboutCommittees",
+	"table" => [
+	"id" => "Id",
+	"createdat" => "Created At",
+	],
+	],
 	],
 	"frontend" => [
 	"auth" => [
