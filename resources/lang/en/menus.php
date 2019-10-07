@@ -227,6 +227,13 @@ return [
 	"management" => "Winner Management",
 	"main" => "Winners",
 	],
+	"gallerycategories" => [
+	"all" => "All GalleryCategories",
+	"create" => "Create GalleryCategory",
+	"edit" => "Edit GalleryCategory",
+	"management" => "GalleryCategory Management",
+	"main" => "GalleryCategories",
+	],
 	],
 	"language-picker" => [
 	"language" => "Language",

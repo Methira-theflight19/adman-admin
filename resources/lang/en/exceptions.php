@@ -197,6 +197,13 @@ return [
 	"not_found" => "That Winner does not exist.",
 	"update_error" => "There was a problem updating this Winner. Please try again.",
 	],
+	"gallerycategories" => [
+	"already_exists" => "That GalleryCategory already exists. Please choose a different name.",
+	"create_error" => "There was a problem creating this GalleryCategory. Please try again.",
+	"delete_error" => "There was a problem deleting this GalleryCategory. Please try again.",
+	"not_found" => "That GalleryCategory does not exist.",
+	"update_error" => "There was a problem updating this GalleryCategory. Please try again.",
+	],
 	],
 	"frontend" => [
 	"auth" => [

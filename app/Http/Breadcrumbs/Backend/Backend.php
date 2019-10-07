@@ -31,3 +31,4 @@ require __DIR__.'/AboutChairman.php';
 require __DIR__.'/AboutCommitteeCategory.php';
 require __DIR__.'/AboutCommittee.php';
 require __DIR__.'/Winner.php';
+require __DIR__.'/GalleryCategory.php';

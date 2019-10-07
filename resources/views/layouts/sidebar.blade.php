@@ -170,6 +170,12 @@
                         <span> Winner </span>
                     </a>
                 </li>
+                <li>
+                    <a href="{{ route('admin.gallerycategories.index') }}">
+                        <i class="fe-image"></i>
+                        <span> Gallory </span>
+                    </a>
+                </li>
          
                 <li>
                     <a href="{{ route('admin.pages.index') }}">

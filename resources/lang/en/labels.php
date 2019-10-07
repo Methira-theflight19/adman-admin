@@ -406,6 +406,16 @@ return [
 	"createdat" => "Created At",
 	],
 	],
+	"gallerycategories" => [
+	"create" => "Create GalleryCategory",
+	"edit" => "Edit GalleryCategory",
+	"management" => "GalleryCategory Management",
+	"title" => "GalleryCategories",
+	"table" => [
+	"id" => "Id",
+	"createdat" => "Created At",
+	],
+	],
 	],
 	"frontend" => [
 	"auth" => [

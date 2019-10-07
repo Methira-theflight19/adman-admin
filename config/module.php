@@ -71,4 +71,7 @@ return [
 	"winners" => [
 	"table" => "winners",
 	],
+	"gallerycategories" => [
+	"table" => "gallery_categories",
+	],
 ];

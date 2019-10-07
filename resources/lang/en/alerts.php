@@ -139,5 +139,10 @@ return [
 	"deleted" => "The Winner was successfully deleted.",
 	"updated" => "The Winner was successfully updated.",
 	],
+	"gallerycategories" => [
+	"created" => "The GalleryCategory was successfully created.",
+	"deleted" => "The GalleryCategory was successfully deleted.",
+	"updated" => "The GalleryCategory was successfully updated.",
+	],
 	],
 ];
