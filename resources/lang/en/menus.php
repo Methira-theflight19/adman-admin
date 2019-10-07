@@ -199,6 +199,13 @@ return [
 	"management" => "TalkPhoto Management",
 	"main" => "TalkPhotos",
 	],
+	"aboutchairman" => [
+	"all" => "All aboutchairman",
+	"create" => "Create AboutChairman",
+	"edit" => "Edit AboutChairman",
+	"management" => "AboutChairman Management",
+	"main" => "aboutchairman",
+	],
 	],
 	"language-picker" => [
 	"language" => "Language",

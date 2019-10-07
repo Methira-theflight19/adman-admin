@@ -169,6 +169,13 @@ return [
 	"not_found" => "That TalkPhoto does not exist.",
 	"update_error" => "There was a problem updating this TalkPhoto. Please try again.",
 	],
+	"aboutchairman" => [
+	"already_exists" => "That AboutChairman already exists. Please choose a different name.",
+	"create_error" => "There was a problem creating this AboutChairman. Please try again.",
+	"delete_error" => "There was a problem deleting this AboutChairman. Please try again.",
+	"not_found" => "That AboutChairman does not exist.",
+	"update_error" => "There was a problem updating this AboutChairman. Please try again.",
+	],
 	],
 	"frontend" => [
 	"auth" => [

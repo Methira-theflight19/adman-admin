@@ -366,6 +366,16 @@ return [
 	"createdat" => "Created At",
 	],
 	],
+	"aboutchairman" => [
+	"create" => "Create AboutChairman",
+	"edit" => "Edit AboutChairman",
+	"management" => "AboutChairman Management",
+	"title" => "aboutchairman",
+	"table" => [
+	"id" => "Id",
+	"createdat" => "Created At",
+	],
+	],
 	],
 	"frontend" => [
 	"auth" => [
