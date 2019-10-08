@@ -426,6 +426,16 @@ return [
 	"createdat" => "Created At",
 	],
 	],
+	"judgecategories" => [
+	"create" => "Create JudgeCategory",
+	"edit" => "Edit JudgeCategory",
+	"management" => "JudgeCategory Management",
+	"title" => "JudgeCategories",
+	"table" => [
+	"id" => "Id",
+	"createdat" => "Created At",
+	],
+	],
 	],
 	"frontend" => [
 	"auth" => [

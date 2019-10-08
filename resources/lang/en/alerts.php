@@ -149,5 +149,10 @@ return [
 	"deleted" => "The Gallery was successfully deleted.",
 	"updated" => "The Gallery was successfully updated.",
 	],
+	"judgecategories" => [
+	"created" => "The JudgeCategory was successfully created.",
+	"deleted" => "The JudgeCategory was successfully deleted.",
+	"updated" => "The JudgeCategory was successfully updated.",
+	],
 	],
 ];

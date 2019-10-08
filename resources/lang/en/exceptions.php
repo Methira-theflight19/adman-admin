@@ -211,6 +211,13 @@ return [
 	"not_found" => "That Gallery does not exist.",
 	"update_error" => "There was a problem updating this Gallery. Please try again.",
 	],
+	"judgecategories" => [
+	"already_exists" => "That JudgeCategory already exists. Please choose a different name.",
+	"create_error" => "There was a problem creating this JudgeCategory. Please try again.",
+	"delete_error" => "There was a problem deleting this JudgeCategory. Please try again.",
+	"not_found" => "That JudgeCategory does not exist.",
+	"update_error" => "There was a problem updating this JudgeCategory. Please try again.",
+	],
 	],
 	"frontend" => [
 	"auth" => [

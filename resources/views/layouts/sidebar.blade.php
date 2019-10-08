@@ -188,6 +188,30 @@
            
                     </ul>
                 </li>
+                <li>
+                    <a href="javascript: void(0);">
+                        <i class="fe-image"></i>
+                        <span>Award</span>
+                        <span class="menu-arrow"></span>
+                    </a>
+                    <ul class="nav-second-level" aria-expanded="false">
+                    <li>
+                            <a href="javascript: void(0);">
+                                <span>Judge</span>
+                                <span class="menu-arrow"></span>
+                            </a>
+                            <ul class="nav-second-level" aria-expanded="false">
+                                <li>
+                                    <a href="{{ route('admin.judgecategories.index') }}">
+                                        <span> Judge Category </span>
+                                    </a>
+                                </li>
+                
+                            </ul>
+                        </li>
+           
+                    </ul>
+                </li>
          
                 <li>
                     <a href="{{ route('admin.pages.index') }}">

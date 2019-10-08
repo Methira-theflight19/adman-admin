@@ -77,4 +77,7 @@ return [
 	"galleries" => [
 	"table" => "galleries",
 	],
+	"judgecategories" => [
+	"table" => "judge_categories",
+	],
 ];

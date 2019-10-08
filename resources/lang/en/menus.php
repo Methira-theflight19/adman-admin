@@ -241,6 +241,13 @@ return [
 	"management" => "Gallery Management",
 	"main" => "Galleries",
 	],
+	"judgecategories" => [
+	"all" => "All JudgeCategories",
+	"create" => "Create JudgeCategory",
+	"edit" => "Edit JudgeCategory",
+	"management" => "JudgeCategory Management",
+	"main" => "JudgeCategories",
+	],
 	],
 	"language-picker" => [
 	"language" => "Language",
