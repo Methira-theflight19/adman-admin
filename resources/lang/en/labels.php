@@ -416,6 +416,16 @@ return [
 	"createdat" => "Created At",
 	],
 	],
+	"galleries" => [
+	"create" => "Create Gallery",
+	"edit" => "Edit Gallery",
+	"management" => "Gallery Management",
+	"title" => "Galleries",
+	"table" => [
+	"id" => "Id",
+	"createdat" => "Created At",
+	],
+	],
 	],
 	"frontend" => [
 	"auth" => [

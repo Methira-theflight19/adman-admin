@@ -101,8 +101,6 @@
                             </a>
                         </li>
                     </ul>
-
-
                 </li>
                 
 
@@ -171,10 +169,24 @@
                     </a>
                 </li>
                 <li>
-                    <a href="{{ route('admin.gallerycategories.index') }}">
+                    <a href="javascript: void(0);">
                         <i class="fe-image"></i>
-                        <span> Gallory </span>
+                        <span>Gallory</span>
+                        <span class="menu-arrow"></span>
                     </a>
+                    <ul class="nav-second-level" aria-expanded="false">
+                        <li>
+                            <a href="{{ route('admin.gallerycategories.index') }}">
+                                <span> Gallery Category </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{ route('admin.galleries.index') }}">
+                                <span> Gallery </span>
+                            </a>
+                        </li>
+           
+                    </ul>
                 </li>
          
                 <li>

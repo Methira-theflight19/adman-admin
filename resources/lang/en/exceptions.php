@@ -204,6 +204,13 @@ return [
 	"not_found" => "That GalleryCategory does not exist.",
 	"update_error" => "There was a problem updating this GalleryCategory. Please try again.",
 	],
+	"galleries" => [
+	"already_exists" => "That Gallery already exists. Please choose a different name.",
+	"create_error" => "There was a problem creating this Gallery. Please try again.",
+	"delete_error" => "There was a problem deleting this Gallery. Please try again.",
+	"not_found" => "That Gallery does not exist.",
+	"update_error" => "There was a problem updating this Gallery. Please try again.",
+	],
 	],
 	"frontend" => [
 	"auth" => [

@@ -144,5 +144,10 @@ return [
 	"deleted" => "The GalleryCategory was successfully deleted.",
 	"updated" => "The GalleryCategory was successfully updated.",
 	],
+	"galleries" => [
+	"created" => "The Gallery was successfully created.",
+	"deleted" => "The Gallery was successfully deleted.",
+	"updated" => "The Gallery was successfully updated.",
+	],
 	],
 ];

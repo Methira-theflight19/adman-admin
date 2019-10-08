@@ -234,6 +234,13 @@ return [
 	"management" => "GalleryCategory Management",
 	"main" => "GalleryCategories",
 	],
+	"galleries" => [
+	"all" => "All Galleries",
+	"create" => "Create Gallery",
+	"edit" => "Edit Gallery",
+	"management" => "Gallery Management",
+	"main" => "Galleries",
+	],
 	],
 	"language-picker" => [
 	"language" => "Language",

@@ -74,4 +74,7 @@ return [
 	"gallerycategories" => [
 	"table" => "gallery_categories",
 	],
+	"galleries" => [
+	"table" => "galleries",
+	],
 ];
