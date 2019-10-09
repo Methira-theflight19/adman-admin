@@ -446,6 +446,16 @@ return [
 	"createdat" => "Created At",
 	],
 	],
+	"awardrules" => [
+	"create" => "Create AwardRule",
+	"edit" => "Edit AwardRule",
+	"management" => "AwardRule Management",
+	"title" => "AwardRules",
+	"table" => [
+	"id" => "Id",
+	"createdat" => "Created At",
+	],
+	],
 	],
 	"frontend" => [
 	"auth" => [

@@ -195,28 +195,35 @@
                         <span class="menu-arrow"></span>
                     </a>
                     <ul class="nav-second-level" aria-expanded="false">
-                    <li>
-                            <a href="javascript: void(0);">
-                                <span>Judge</span>
-                                <span class="menu-arrow"></span>
-                            </a>
-                            <ul class="nav-second-level" aria-expanded="false">
-                                <li>
-                                    <a href="{{ route('admin.judgecategories.index') }}">
-                                        <span> Judge Category </span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="{{ route('admin.judges.index') }}">
-                                        <span> Judge  </span>
-                                    </a>
-                                </li>
-                
-                            </ul>
+                        <li>
+                                <a href="{{ route('admin.awardrules.index') }}">
+                                    <span>Rules</span>
+                                </a>
                         </li>
-           
-                    </ul>
-                </li>
+                        <li>
+
+                                
+                                <a href="javascript: void(0);">
+                                    <span>Judge</span>
+                                    <span class="menu-arrow"></span>
+                                </a>
+                                <ul class="nav-second-level" aria-expanded="false">
+                                    <li>
+                                        <a href="{{ route('admin.judgecategories.index') }}">
+                                            <span> Judge Category </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="{{ route('admin.judges.index') }}">
+                                            <span> Judge  </span>
+                                        </a>
+                                    </li>
+                    
+                                </ul>
+                            </li>
+            
+                        </ul>
+                    </li>
          
                 <li>
                     <a href="{{ route('admin.pages.index') }}">

@@ -159,5 +159,10 @@ return [
 	"deleted" => "The Judge was successfully deleted.",
 	"updated" => "The Judge was successfully updated.",
 	],
+	"awardrules" => [
+	"created" => "The AwardRule was successfully created.",
+	"deleted" => "The AwardRule was successfully deleted.",
+	"updated" => "The AwardRule was successfully updated.",
+	],
 	],
 ];

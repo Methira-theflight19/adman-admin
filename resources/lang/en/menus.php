@@ -255,6 +255,13 @@ return [
 	"management" => "Judge Management",
 	"main" => "Judges",
 	],
+	"awardrules" => [
+	"all" => "All AwardRules",
+	"create" => "Create AwardRule",
+	"edit" => "Edit AwardRule",
+	"management" => "AwardRule Management",
+	"main" => "AwardRules",
+	],
 	],
 	"language-picker" => [
 	"language" => "Language",
