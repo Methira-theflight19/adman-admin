@@ -80,4 +80,7 @@ return [
 	"judgecategories" => [
 	"table" => "judge_categories",
 	],
+	"judges" => [
+	"table" => "judges",
+	],
 ];

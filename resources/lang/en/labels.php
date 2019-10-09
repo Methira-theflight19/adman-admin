@@ -436,6 +436,16 @@ return [
 	"createdat" => "Created At",
 	],
 	],
+	"judges" => [
+	"create" => "Create Judge",
+	"edit" => "Edit Judge",
+	"management" => "Judge Management",
+	"title" => "Judges",
+	"table" => [
+	"id" => "Id",
+	"createdat" => "Created At",
+	],
+	],
 	],
 	"frontend" => [
 	"auth" => [

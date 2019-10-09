@@ -248,6 +248,13 @@ return [
 	"management" => "JudgeCategory Management",
 	"main" => "JudgeCategories",
 	],
+	"judges" => [
+	"all" => "All Judges",
+	"create" => "Create Judge",
+	"edit" => "Edit Judge",
+	"management" => "Judge Management",
+	"main" => "Judges",
+	],
 	],
 	"language-picker" => [
 	"language" => "Language",

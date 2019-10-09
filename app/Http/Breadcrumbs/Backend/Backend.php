@@ -34,3 +34,4 @@ require __DIR__.'/Winner.php';
 require __DIR__.'/GalleryCategory.php';
 require __DIR__.'/Gallery.php';
 require __DIR__.'/JudgeCategory.php';
+require __DIR__.'/Judge.php';

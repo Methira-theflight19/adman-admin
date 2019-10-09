@@ -190,7 +190,7 @@
                 </li>
                 <li>
                     <a href="javascript: void(0);">
-                        <i class="fe-image"></i>
+                        <i class="fe-gift"></i>
                         <span>Award</span>
                         <span class="menu-arrow"></span>
                     </a>
@@ -204,6 +204,11 @@
                                 <li>
                                     <a href="{{ route('admin.judgecategories.index') }}">
                                         <span> Judge Category </span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{{ route('admin.judges.index') }}">
+                                        <span> Judge  </span>
                                     </a>
                                 </li>
                 

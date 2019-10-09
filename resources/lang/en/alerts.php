@@ -154,5 +154,10 @@ return [
 	"deleted" => "The JudgeCategory was successfully deleted.",
 	"updated" => "The JudgeCategory was successfully updated.",
 	],
+	"judges" => [
+	"created" => "The Judge was successfully created.",
+	"deleted" => "The Judge was successfully deleted.",
+	"updated" => "The Judge was successfully updated.",
+	],
 	],
 ];

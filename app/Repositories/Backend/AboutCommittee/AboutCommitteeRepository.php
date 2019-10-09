@@ -38,7 +38,7 @@ class AboutCommitteeRepository extends BaseRepository
     protected $storage;
     public function __construct()
     {
-        $this->upload_path = 'img'.DIRECTORY_SEPARATOR.'about'.DIRECTORY_SEPARATOR.'committee'.DIRECTORY_SEPARATOR;
+        $this->upload_path = 'img'.DIRECTORY_SEPARATOR.'about'.DIRECTORY_SEPARATOR.'judge'.DIRECTORY_SEPARATOR;
         $this->storage = Storage::disk('public');
     }
     public function getForDataTable()
