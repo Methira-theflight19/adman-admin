@@ -456,6 +456,16 @@ return [
 	"createdat" => "Created At",
 	],
 	],
+	"awardcategories" => [
+	"create" => "Create AwardCategory",
+	"edit" => "Edit AwardCategory",
+	"management" => "AwardCategory Management",
+	"title" => "AwardCategories",
+	"table" => [
+	"id" => "Id",
+	"createdat" => "Created At",
+	],
+	],
 	],
 	"frontend" => [
 	"auth" => [

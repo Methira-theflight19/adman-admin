@@ -164,5 +164,10 @@ return [
 	"deleted" => "The AwardRule was successfully deleted.",
 	"updated" => "The AwardRule was successfully updated.",
 	],
+	"awardcategories" => [
+	"created" => "The AwardCategory was successfully created.",
+	"deleted" => "The AwardCategory was successfully deleted.",
+	"updated" => "The AwardCategory was successfully updated.",
+	],
 	],
 ];

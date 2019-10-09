@@ -262,6 +262,13 @@ return [
 	"management" => "AwardRule Management",
 	"main" => "AwardRules",
 	],
+	"awardcategories" => [
+	"all" => "All AwardCategories",
+	"create" => "Create AwardCategory",
+	"edit" => "Edit AwardCategory",
+	"management" => "AwardCategory Management",
+	"main" => "AwardCategories",
+	],
 	],
 	"language-picker" => [
 	"language" => "Language",

@@ -86,4 +86,7 @@ return [
 	"awardrules" => [
 	"table" => "award_rules",
 	],
+	"awardcategories" => [
+	"table" => "award_categories",
+	],
 ];

@@ -201,8 +201,25 @@
                                 </a>
                         </li>
                         <li>
-
-                                
+                                <a href="javascript: void(0);">
+                                    <span>Award</span>
+                                    <span class="menu-arrow"></span>
+                                </a>
+                                <ul class="nav-second-level" aria-expanded="false">
+                                    <li>
+                                        <a href="{{ route('admin.awardcategories.index') }}">
+                                            <span> Award Category </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <span> Award  </span>
+                                        </a>
+                                    </li>
+                    
+                                </ul>
+                        </li>
+                        <li>
                                 <a href="javascript: void(0);">
                                     <span>Judge</span>
                                     <span class="menu-arrow"></span>
@@ -220,7 +237,7 @@
                                     </li>
                     
                                 </ul>
-                            </li>
+                        </li>
             
                         </ul>
                     </li>

@@ -232,6 +232,13 @@ return [
 	"not_found" => "That AwardRule does not exist.",
 	"update_error" => "There was a problem updating this AwardRule. Please try again.",
 	],
+	"awardcategories" => [
+	"already_exists" => "That AwardCategory already exists. Please choose a different name.",
+	"create_error" => "There was a problem creating this AwardCategory. Please try again.",
+	"delete_error" => "There was a problem deleting this AwardCategory. Please try again.",
+	"not_found" => "That AwardCategory does not exist.",
+	"update_error" => "There was a problem updating this AwardCategory. Please try again.",
+	],
 	],
 	"frontend" => [
 	"auth" => [
