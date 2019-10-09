@@ -253,6 +253,13 @@ return [
 	"not_found" => "That Award does not exist.",
 	"update_error" => "There was a problem updating this Award. Please try again.",
 	],
+	"achivecategories" => [
+	"already_exists" => "That AchiveCategory already exists. Please choose a different name.",
+	"create_error" => "There was a problem creating this AchiveCategory. Please try again.",
+	"delete_error" => "There was a problem deleting this AchiveCategory. Please try again.",
+	"not_found" => "That AchiveCategory does not exist.",
+	"update_error" => "There was a problem updating this AchiveCategory. Please try again.",
+	],
 	],
 	"frontend" => [
 	"auth" => [

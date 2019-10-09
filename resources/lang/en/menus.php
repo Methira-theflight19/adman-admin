@@ -283,6 +283,13 @@ return [
 	"management" => "Award Management",
 	"main" => "Awards",
 	],
+	"achivecategories" => [
+	"all" => "All AchiveCategories",
+	"create" => "Create AchiveCategory",
+	"edit" => "Edit AchiveCategory",
+	"management" => "AchiveCategory Management",
+	"main" => "AchiveCategories",
+	],
 	],
 	"language-picker" => [
 	"language" => "Language",

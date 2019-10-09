@@ -95,4 +95,7 @@ return [
 	"awards" => [
 	"table" => "awards",
 	],
+	"achivecategories" => [
+	"table" => "achive_categories",
+	],
 ];

@@ -179,5 +179,10 @@ return [
 	"deleted" => "The Award was successfully deleted.",
 	"updated" => "The Award was successfully updated.",
 	],
+	"achivecategories" => [
+	"created" => "The AchiveCategory was successfully created.",
+	"deleted" => "The AchiveCategory was successfully deleted.",
+	"updated" => "The AchiveCategory was successfully updated.",
+	],
 	],
 ];
