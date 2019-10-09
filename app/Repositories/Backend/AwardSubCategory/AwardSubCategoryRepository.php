@@ -84,7 +84,7 @@ class AwardSubCategoryRepository extends BaseRepository
     public function delete(AwardSubCategory $awardsubcategory)
     {
         if ($awardsubcategory->delete()) {
-            AwardCategoryMapAwardSubCategory::where('award_sub_id', $awardsubcategory->id)->delete();
+            AwardCategoryMapAwardSubCategory::where('award_sub_cat_id', $awardsubcategory->id)->delete();
             return true;
         }
 
