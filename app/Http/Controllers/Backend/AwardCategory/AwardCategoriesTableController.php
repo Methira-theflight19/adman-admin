@@ -49,7 +49,6 @@ class AwardCategoriesTableController extends Controller
                     return "active";
                 }
             })
-
             ->addColumn('created_at', function ($awardcategory) {
                 return Carbon::parse($awardcategory->created_at)->toDateString();
             })

@@ -212,8 +212,8 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#">
-                                            <span> Award  </span>
+                                        <a href="{{ route('admin.awardsubcategories.index')}}">
+                                            <span> Award Sub Category</span>
                                         </a>
                                     </li>
                     

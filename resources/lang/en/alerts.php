@@ -169,5 +169,10 @@ return [
 	"deleted" => "The AwardCategory was successfully deleted.",
 	"updated" => "The AwardCategory was successfully updated.",
 	],
+	"awardsubcategories" => [
+	"created" => "The AwardSubCategory was successfully created.",
+	"deleted" => "The AwardSubCategory was successfully deleted.",
+	"updated" => "The AwardSubCategory was successfully updated.",
+	],
 	],
 ];
