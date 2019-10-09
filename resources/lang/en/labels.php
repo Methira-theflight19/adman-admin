@@ -476,6 +476,16 @@ return [
 	"createdat" => "Created At",
 	],
 	],
+	"awards" => [
+	"create" => "Create Award",
+	"edit" => "Edit Award",
+	"management" => "Award Management",
+	"title" => "Awards",
+	"table" => [
+	"id" => "Id",
+	"createdat" => "Created At",
+	],
+	],
 	],
 	"frontend" => [
 	"auth" => [

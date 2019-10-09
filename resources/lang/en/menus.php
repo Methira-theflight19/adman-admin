@@ -276,6 +276,13 @@ return [
 	"management" => "AwardSubCategory Management",
 	"main" => "AwardSubCategories",
 	],
+	"awards" => [
+	"all" => "All Awards",
+	"create" => "Create Award",
+	"edit" => "Edit Award",
+	"management" => "Award Management",
+	"main" => "Awards",
+	],
 	],
 	"language-picker" => [
 	"language" => "Language",

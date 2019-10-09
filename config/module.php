@@ -92,4 +92,7 @@ return [
 	"awardsubcategories" => [
 	"table" => "award_sub_categories",
 	],
+	"awards" => [
+	"table" => "awards",
+	],
 ];

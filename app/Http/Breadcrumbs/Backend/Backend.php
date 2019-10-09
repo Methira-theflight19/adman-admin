@@ -38,3 +38,4 @@ require __DIR__.'/Judge.php';
 require __DIR__.'/AwardRule.php';
 require __DIR__.'/AwardCategory.php';
 require __DIR__.'/AwardSubCategory.php';
+require __DIR__.'/Award.php';
