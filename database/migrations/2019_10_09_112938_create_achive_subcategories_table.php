@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateAchiveCategoriesTable extends Migration
+class CreateAchiveSubcategoriesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,9 @@ class CreateAchiveCategoriesTable extends Migration
      */
     public function up()
     {
-        Schema::create('achive_categories', function (Blueprint $table) {
+        Schema::create('achive_subcategories', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('image', 191);
             $table->string('name', 191);
-            $table->string('subtitle', 191);
             $table->integer('active')->nullable();
             $table->timestamps();
         });
@@ -30,6 +28,6 @@ class CreateAchiveCategoriesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('achive_categories');
+        Schema::dropIfExists('achive_subcategories');
     }
 }

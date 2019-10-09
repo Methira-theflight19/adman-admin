@@ -260,6 +260,13 @@ return [
 	"not_found" => "That AchiveCategory does not exist.",
 	"update_error" => "There was a problem updating this AchiveCategory. Please try again.",
 	],
+	"achivesubcategories" => [
+	"already_exists" => "That AchiveSubCategory already exists. Please choose a different name.",
+	"create_error" => "There was a problem creating this AchiveSubCategory. Please try again.",
+	"delete_error" => "There was a problem deleting this AchiveSubCategory. Please try again.",
+	"not_found" => "That AchiveSubCategory does not exist.",
+	"update_error" => "There was a problem updating this AchiveSubCategory. Please try again.",
+	],
 	],
 	"frontend" => [
 	"auth" => [

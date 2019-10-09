@@ -1,18 +1,18 @@
 <?php
 
-namespace App\Models\AchiveCategory;
+namespace App\Models\AchiveSubCategory;
 
 use App\Models\ModelTrait;
 use Illuminate\Database\Eloquent\Model;
-use App\Models\AchiveCategory\Traits\AchiveCategoryAttribute;
-use App\Models\AchiveCategory\Traits\AchiveCategoryRelationship;
+use App\Models\AchiveSubCategory\Traits\AchiveSubCategoryAttribute;
+use App\Models\AchiveSubCategory\Traits\AchiveSubCategoryRelationship;
 
-class AchiveCategory extends Model
+class AchiveSubCategory extends Model
 {
     use ModelTrait,
-        AchiveCategoryAttribute,
-    	AchiveCategoryRelationship {
-            // AchiveCategoryAttribute::getEditButtonAttribute insteadof ModelTrait;
+        AchiveSubCategoryAttribute,
+    	AchiveSubCategoryRelationship {
+            // AchiveSubCategoryAttribute::getEditButtonAttribute insteadof ModelTrait;
         }
 
     /**
@@ -24,17 +24,14 @@ class AchiveCategory extends Model
      * The database table used by the model.
      * @var string
      */
-    protected $table = 'achive_categories';
+    protected $table = 'achive_subcategories';
 
     /**
      * Mass Assignable fields of model
      * @var array
      */
     protected $fillable = [
-        'image',
-        'name',
-        'subtitle',
-        'active'
+        'name'
     ];
 
     /**

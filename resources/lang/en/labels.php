@@ -496,6 +496,16 @@ return [
 	"createdat" => "Created At",
 	],
 	],
+	"achivesubcategories" => [
+	"create" => "Create AchiveSubCategory",
+	"edit" => "Edit AchiveSubCategory",
+	"management" => "AchiveSubCategory Management",
+	"title" => "AchiveSubCategories",
+	"table" => [
+	"id" => "Id",
+	"createdat" => "Created At",
+	],
+	],
 	],
 	"frontend" => [
 	"auth" => [

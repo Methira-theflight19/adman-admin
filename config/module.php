@@ -98,4 +98,7 @@ return [
 	"achivecategories" => [
 	"table" => "achive_categories",
 	],
+	"achivesubcategories" => [
+	"table" => "achive_subcategories",
+	],
 ];

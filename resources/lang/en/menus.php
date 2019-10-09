@@ -290,6 +290,13 @@ return [
 	"management" => "AchiveCategory Management",
 	"main" => "AchiveCategories",
 	],
+	"achivesubcategories" => [
+	"all" => "All AchiveSubCategories",
+	"create" => "Create AchiveSubCategory",
+	"edit" => "Edit AchiveSubCategory",
+	"management" => "AchiveSubCategory Management",
+	"main" => "AchiveSubCategories",
+	],
 	],
 	"language-picker" => [
 	"language" => "Language",

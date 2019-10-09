@@ -260,8 +260,8 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="#">
-                                    <span> Achive </span>
+                                <a href="{{ route('admin.achivesubcategories.index') }}">
+                                    <span> Achive Sub Category</span>
                                 </a>
                             </li>
             

@@ -40,3 +40,4 @@ require __DIR__.'/AwardCategory.php';
 require __DIR__.'/AwardSubCategory.php';
 require __DIR__.'/Award.php';
 require __DIR__.'/AchiveCategory.php';
+require __DIR__.'/AchiveSubCategory.php';

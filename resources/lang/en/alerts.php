@@ -184,5 +184,10 @@ return [
 	"deleted" => "The AchiveCategory was successfully deleted.",
 	"updated" => "The AchiveCategory was successfully updated.",
 	],
+	"achivesubcategories" => [
+	"created" => "The AchiveSubCategory was successfully created.",
+	"deleted" => "The AchiveSubCategory was successfully deleted.",
+	"updated" => "The AchiveSubCategory was successfully updated.",
+	],
 	],
 ];
