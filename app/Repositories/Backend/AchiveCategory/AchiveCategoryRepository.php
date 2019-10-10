@@ -36,7 +36,7 @@ class AchiveCategoryRepository extends BaseRepository
     protected $storage;
     public function __construct()
     {
-        $this->upload_path = 'img'.DIRECTORY_SEPARATOR.'achive'.DIRECTORY_SEPARATOR;
+        $this->upload_path = 'img'.DIRECTORY_SEPARATOR.'achive'.DIRECTORY_SEPARATOR.'icon'.DIRECTORY_SEPARATOR;
         $this->storage = Storage::disk('public');
     }
     public function getForDataTable()

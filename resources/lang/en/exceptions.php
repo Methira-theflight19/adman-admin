@@ -267,6 +267,20 @@ return [
 	"not_found" => "That AchiveSubCategory does not exist.",
 	"update_error" => "There was a problem updating this AchiveSubCategory. Please try again.",
 	],
+	"achives" => [
+	"already_exists" => "That Achive already exists. Please choose a different name.",
+	"create_error" => "There was a problem creating this Achive. Please try again.",
+	"delete_error" => "There was a problem deleting this Achive. Please try again.",
+	"not_found" => "That Achive does not exist.",
+	"update_error" => "There was a problem updating this Achive. Please try again.",
+	],
+	"awardlinks" => [
+	"already_exists" => "That AwardLink already exists. Please choose a different name.",
+	"create_error" => "There was a problem creating this AwardLink. Please try again.",
+	"delete_error" => "There was a problem deleting this AwardLink. Please try again.",
+	"not_found" => "That AwardLink does not exist.",
+	"update_error" => "There was a problem updating this AwardLink. Please try again.",
+	],
 	],
 	"frontend" => [
 	"auth" => [

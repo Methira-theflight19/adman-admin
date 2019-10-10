@@ -39,7 +39,7 @@ class AchiveCategoriesTableController extends Controller
         return Datatables::of($this->achivecategory->getForDataTable())
             ->escapeColumns(['id'])
             ->addColumn('image', function ($achivecategory) {
-                $url= asset('storage/img/achive/'.$achivecategory->image);
+                $url= asset('storage/img/achive/icon/'.$achivecategory->image);
                  return '<img src="'.$url.'" border="0" width="200px" class="img-rounded" align="center" />';
             })
             ->addColumn('created_at', function ($achivecategory) {

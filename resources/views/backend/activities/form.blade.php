@@ -10,6 +10,15 @@
         <label for="content" class="control-label required">Activity name</label> 
             {{ Form::text('name', null, ['class' => 'form-control box-size', 'placeholder' => trans('validation.attributes.backend.blogs.title'), 'required' => 'required']) }}
     </div><!--form control-->
+    
+    <div class="form-group">
+        <label for="content" class="control-label required">Sub title</label> 
+        @if(!empty($activities->subtitle))
+            <input class="form-control" placeholder="Sub title" name="subtitle" type="text" id="subtitle" value="{{ $activities->subtitle}}">
+        @else   
+            <input class="form-control" placeholder="Sub title" name="subtitle" type="text" id="subtitle" >
+        @endif
+    </div><!--form control-->
 
 
     <div class="form-group">

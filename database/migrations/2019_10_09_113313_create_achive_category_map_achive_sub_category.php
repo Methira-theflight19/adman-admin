@@ -15,8 +15,8 @@ class CreateAchiveCategoryMapAchiveSubCategory extends Migration
     {
         Schema::create('achive_category_map_achive_sub_category', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('achive_sub_cat_id')->unsigned()->index();
-            $table->integer('achive__id')->unsigned()->index();
+            $table->integer('achive_cat_id')->unsigned()->index();
+            $table->integer('achive_sub_id')->unsigned()->index();
         });
     }
 

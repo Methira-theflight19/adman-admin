@@ -16,7 +16,7 @@ class CreateAwardsubMapAward extends Migration
         Schema::create('awardsub_map_award', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('award_sub_cat_id')->unsigned()->index();
-            $table->integer('award__id')->unsigned()->index();
+            $table->integer('award_id')->unsigned()->index();
         });
     }
 

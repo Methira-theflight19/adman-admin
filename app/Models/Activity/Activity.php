@@ -32,6 +32,7 @@ class Activity extends Model
      */
     protected $fillable = [
         'name',
+        'subtitle',
         'publish_datetime',
         'image',
         'content',

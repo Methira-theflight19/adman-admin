@@ -189,5 +189,15 @@ return [
 	"deleted" => "The AchiveSubCategory was successfully deleted.",
 	"updated" => "The AchiveSubCategory was successfully updated.",
 	],
+	"achives" => [
+	"created" => "The Achive was successfully created.",
+	"deleted" => "The Achive was successfully deleted.",
+	"updated" => "The Achive was successfully updated.",
+	],
+	"awardlinks" => [
+	"created" => "The AwardLink was successfully created.",
+	"deleted" => "The AwardLink was successfully deleted.",
+	"updated" => "The AwardLink was successfully updated.",
+	],
 	],
 ];

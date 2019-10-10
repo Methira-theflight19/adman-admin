@@ -19,7 +19,10 @@ trait AwardRelationship
         $this->belongsTo(User::class);
     }
      */
-    public function category(){
+    public function subcategory(){
         return $this->belongsToMany(AwardSubCategory::class, 'awardsub_map_award', 'award_id','award_sub_cat_id');
+    }
+    public function category(){
+        return $this->belongsToMany(AwardCategory::class, 'award_map_awardcat', 'award_id','award_cat_id');
     }
 }

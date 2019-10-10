@@ -41,14 +41,14 @@ class AwardsTableController extends Controller
     {
         return Datatables::of($this->award->getForDataTable())
             ->escapeColumns(['id'])
-            ->addColumn('category', function ($award) {
-                $selectedsubcat = $award->category->pluck('id');
-                $awardsubcat = AwardSubCategory::with('category')->where('id',$selectedsubcat[0])->first();
-                $awardcatid = $awardsubcat->category[0]->id;
-                $awardcat = AwardCategory::where('id',$awardcatid)->first();
-                $cat = $awardcat->name.' - '.$awardsubcat->name ;
-                 return  $cat;
-            })
+            // ->addColumn('category', function ($award) {
+            //     $selectedsubcat = $award->category->pluck('id');
+            //     $awardsubcat = AwardSubCategory::with('category')->where('id',$selectedsubcat[0])->first();
+            //     $awardcatid = $awardsubcat->category[0]->id;
+            //     $awardcat = AwardCategory::where('id',$awardcatid)->first();
+            //     $cat = $awardcat->name.' - '.$awardsubcat->name ;
+            //      return  $cat;
+            // })
             ->addColumn('created_at', function ($award) {
                 return Carbon::parse($award->created_at)->toDateString();
             })

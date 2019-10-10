@@ -506,6 +506,26 @@ return [
 	"createdat" => "Created At",
 	],
 	],
+	"achives" => [
+	"create" => "Create Achive",
+	"edit" => "Edit Achive",
+	"management" => "Achive Management",
+	"title" => "Achives",
+	"table" => [
+	"id" => "Id",
+	"createdat" => "Created At",
+	],
+	],
+	"awardlinks" => [
+	"create" => "Create AwardLink",
+	"edit" => "Edit AwardLink",
+	"management" => "AwardLink Management",
+	"title" => "AwardLinks",
+	"table" => [
+	"id" => "Id",
+	"createdat" => "Created At",
+	],
+	],
 	],
 	"frontend" => [
 	"auth" => [

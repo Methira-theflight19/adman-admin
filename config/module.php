@@ -101,4 +101,10 @@ return [
 	"achivesubcategories" => [
 	"table" => "achive_subcategories",
 	],
+	"achives" => [
+	"table" => "achives",
+	],
+	"awardlinks" => [
+	"table" => "award_links",
+	],
 ];

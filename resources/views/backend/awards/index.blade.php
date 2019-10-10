@@ -24,7 +24,7 @@
                             <th>{{ trans('labels.backend.awards.table.id') }}</th>
                             <th>Name</th>
                             <th>Content</th>
-                            <th>Category</th>
+                            <!-- <th>Category</th> -->
                             <th>{{ trans('labels.backend.awards.table.createdat') }}</th>
                             <th>{{ trans('labels.general.actions') }}</th>
                         </tr>
@@ -66,7 +66,7 @@
                     {data: 'id', name: '{{config('module.awards.table')}}.id'},
                     {data: 'name', name: '{{config('module.awards.table')}}.name'},
                     {data: 'content', name: '{{config('module.awards.table')}}.content'},
-                    {data: 'category', name: 'category'},
+                    // {data: 'category', name: 'category'},
                     {data: 'created_at', name: '{{config('module.awards.table')}}.created_at'},
                     {data: 'actions', name: 'actions', searchable: false, sortable: false}
                 ],

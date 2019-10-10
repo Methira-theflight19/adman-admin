@@ -196,6 +196,11 @@
                     </a>
                     <ul class="nav-second-level" aria-expanded="false">
                         <li>
+                                <a href="{{ route('admin.awardlinks.edit',1) }}">
+                                    <span>Link</span>
+                                </a>
+                        </li>
+                        <li>
                                 <a href="{{ route('admin.awardrules.index') }}">
                                     <span>Rules</span>
                                 </a>
@@ -264,6 +269,13 @@
                                     <span> Achive Sub Category</span>
                                 </a>
                             </li>
+                            <li>
+                                <a href="{{ route('admin.achives.index') }}">
+                                    <span> Achive</span>
+                                </a>
+                            </li>
+
+                            
             
                         </ul>
                     </li>

@@ -46,9 +46,16 @@ class AwardRepository extends BaseRepository
      */
     public function create(array $input)
     {
+        
+        $category = $input['category'];
         $subcat = $input['subcategory'];
         if ($award = Award::create($input)) {
-            $award->category()->sync($subcat);
+            if(!empty($input['subcategory'])){
+                $award->subcategory()->sync($subcat);
+            }else{
+                $award->category()->sync($category);
+            }
+ 
             return true;
         }
         throw new GeneralException(trans('exceptions.backend.awards.create_error'));
@@ -64,9 +71,14 @@ class AwardRepository extends BaseRepository
      */
     public function update(Award $award, array $input)
     {
+        $category = $input['category'];
         $subcat = $input['subcategory'];
         if ($award->update($input))
-            $award->category()->sync($subcat);
+            if(!empty($input['subcategory'])){
+                $award->subcategory()->sync($subcat);
+            }else{
+                $award->category()->sync($category);
+            }
             return true;
 
         throw new GeneralException(trans('exceptions.backend.awards.update_error'));

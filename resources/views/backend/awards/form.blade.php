@@ -30,7 +30,7 @@
         @endforeach
     @endif
     <div class="form-group">
-        <label for="content" class="control-label required">Menu Category</label> 
+        <label for="content" class="control-label required">Award Category</label> 
         <select onchange="myFunction({{$awardsubcat}},{{$selectedCatid}})" class="form-control custom-select" name="category" id="category" data-toggle="select2" required>
   
 
@@ -57,7 +57,7 @@
     </div>
 
     <div class="form-group">
-        <label for="content" class="control-label required">Menu Category</label> 
+        <label for="content" class="control-label required">Award SubCategory</label> 
         <select class="form-control custom-select" name="subcategory" id="subcategory" data-toggle="select2" required>
             <option value="" >None</option>
             @if(!empty($selectedCat))

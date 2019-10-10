@@ -297,6 +297,20 @@ return [
 	"management" => "AchiveSubCategory Management",
 	"main" => "AchiveSubCategories",
 	],
+	"achives" => [
+	"all" => "All Achives",
+	"create" => "Create Achive",
+	"edit" => "Edit Achive",
+	"management" => "Achive Management",
+	"main" => "Achives",
+	],
+	"awardlinks" => [
+	"all" => "All AwardLinks",
+	"create" => "Create AwardLink",
+	"edit" => "Edit AwardLink",
+	"management" => "AwardLink Management",
+	"main" => "AwardLinks",
+	],
 	],
 	"language-picker" => [
 	"language" => "Language",
