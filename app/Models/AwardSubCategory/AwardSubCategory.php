@@ -6,7 +6,7 @@ use App\Models\ModelTrait;
 use Illuminate\Database\Eloquent\Model;
 use App\Models\AwardSubCategory\Traits\AwardSubCategoryAttribute;
 use App\Models\AwardSubCategory\Traits\AwardSubCategoryRelationship;
-
+use App\Models\Award\Award;
 class AwardSubCategory extends Model
 {
     use ModelTrait,
@@ -67,4 +67,6 @@ class AwardSubCategory extends Model
     {
         parent::__construct($attributes);
     }
+
+
 }

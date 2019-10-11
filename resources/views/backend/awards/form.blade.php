@@ -9,23 +9,27 @@
     </div><!--form control-->
    
     <?php 
+
     
-        if(!empty($selectedCat)){
-            $selectedCatid = $selectedCat;
-           echo '<script>myFunction('.$awardsubcat.','.$selectedCatid.');</script>';
+        if(!empty($selectedsubCat)){
+            $selectedsubCatid = $selectedsubCat;
+           echo '<script>myFunction('.$awardsubcat.','.$selectedsubCatid.');</script>';
+        }else if(!empty($selectedCat)){
+            $selectedCatid =  $selectedCat;
         }else{
             $selectedCatid  = '';
         }
     ?>
-    @if(!empty($selectedCat))
+    @if(!empty($selectedsubCat))
+    
         @foreach($awardsubcat as $menu)
         <?php 
-            if($menu['id'] == $selectedCat[0]){
-                $selectcat = $menu->category[0]->id;
+            // if($menu['id'] == $selectedsubCatid[0]){
+            //     $selectcat = $menu->subcategory[0]->id;
                 
-            }else {
-                $selectcat = 0;
-            }
+            // }else {
+            //     $selectcat = 0;
+            // }
         ?>
         @endforeach
     @endif
@@ -33,12 +37,8 @@
         <label for="content" class="control-label required">Award Category</label> 
         <select onchange="myFunction({{$awardsubcat}},{{$selectedCatid}})" class="form-control custom-select" name="category" id="category" data-toggle="select2" required>
   
-
-
         @if(!empty($selectedCat))
-   
             @foreach($awardcat as $menu)
-       
                 @if($menu['id'] == $selectcat)
                     <option selected value="{{$menu->id}}">{{$menu->name}}</option>
                 @else

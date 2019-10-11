@@ -2,6 +2,7 @@
 
 namespace App\Models\AwardSubCategory\Traits;
 use App\Models\AwardCategory\AwardCategory;
+use App\Models\Award\Award;
 /**
  * Class AwardSubCategoryRelationship
  */
@@ -22,4 +23,8 @@ trait AwardSubCategoryRelationship
     public function category(){
         return $this->belongsToMany(AwardCategory::class, 'awardcat_map_awardsubcat', 'award_sub_cat_id','award_cat_id');
     }
+    public function award(){
+        return $this->belongsToMany(Award::class, 'awardsub_map_award', 'award_sub_cat_id','award_id');
+    }
+  
 }

@@ -1,7 +1,8 @@
 <?php
 
 namespace App\Models\AwardCategory\Traits;
-
+use App\Models\AwardSubCategory\AwardSubCategory;
+use App\Models\Award\Award;
 /**
  * Class AwardCategoryRelationship
  */
@@ -19,4 +20,10 @@ trait AwardCategoryRelationship
         $this->belongsTo(User::class);
     }
      */
+    public function subcategory(){
+        return $this->belongsToMany(AwardSubCategory::class, 'awardcat_map_awardsubcat', 'award_cat_id','award_sub_cat_id');
+    }
+    public function award(){
+        return $this->belongsToMany(Award::class, 'award_map_awardcat', 'award_cat_id','award_id');
+    }
 }

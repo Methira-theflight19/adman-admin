@@ -50,11 +50,10 @@ class AwardRepository extends BaseRepository
         $category = $input['category'];
         $subcat = $input['subcategory'];
         if ($award = Award::create($input)) {
-            if(!empty($input['subcategory'])){
+    
                 $award->subcategory()->sync($subcat);
-            }else{
                 $award->category()->sync($category);
-            }
+            
  
             return true;
         }
@@ -74,11 +73,10 @@ class AwardRepository extends BaseRepository
         $category = $input['category'];
         $subcat = $input['subcategory'];
         if ($award->update($input))
-            if(!empty($input['subcategory'])){
+
                 $award->subcategory()->sync($subcat);
-            }else{
                 $award->category()->sync($category);
-            }
+            
             return true;
 
         throw new GeneralException(trans('exceptions.backend.awards.update_error'));

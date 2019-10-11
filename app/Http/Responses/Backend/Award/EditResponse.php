@@ -34,11 +34,13 @@ class EditResponse implements Responsable
     public function toResponse($request)
     {
         $selectedCat = $this->awards->category->pluck('id');
+        $selectedsubCat = $this->awards->subcategory->pluck('id');
         return view('backend.awards.edit')->with([
             'awards' => $this->awards,
             'awardcat' => $this->awardcat,
             'awardsubcat' => $this->awardsubcat,
             'selectedCat' => $selectedCat,
+            'selectedsubCat' => $selectedsubCat,
 
         ]);
     }

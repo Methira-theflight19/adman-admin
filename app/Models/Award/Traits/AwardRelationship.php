@@ -2,6 +2,7 @@
 
 namespace App\Models\Award\Traits;
 use App\Models\AwardSubCategory\AwardSubCategory;
+use App\Models\AwardCategory\AwardCategory;
 /**
  * Class AwardRelationship
  */
