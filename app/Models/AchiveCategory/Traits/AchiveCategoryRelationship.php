@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Models\AchiveCategory\Traits;
-
+use App\Models\AchiveSubCategory\AchiveSubCategory;
 /**
  * Class AchiveCategoryRelationship
  */
@@ -19,4 +19,7 @@ trait AchiveCategoryRelationship
         $this->belongsTo(User::class);
     }
      */
+    public function subcategory(){
+        return $this->belongsToMany(AchiveSubCategory::class, 'achive_category_map_achive_sub_category', 'achive_cat_id','achive_sub_cat_id');
+    }
 }

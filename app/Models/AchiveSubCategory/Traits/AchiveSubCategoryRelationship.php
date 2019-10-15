@@ -2,6 +2,8 @@
 
 namespace App\Models\AchiveSubCategory\Traits;
 use App\Models\AchiveCategory\AchiveCategory;
+use App\Models\Achive\Achive;
+
 /**
  * Class AchiveSubCategoryRelationship
  */
@@ -21,5 +23,8 @@ trait AchiveSubCategoryRelationship
      */
     public function category(){
         return $this->belongsToMany(AchiveCategory::class, 'achive_category_map_achive_sub_category', 'achive_sub_cat_id','achive_cat_id');
+    }
+    public function achive(){
+        return $this->belongsToMany(Achive::class,  'achive_map_achive_sub_category', 'achive_sub_cat_id','achive_id');
     }
 }
